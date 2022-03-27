@@ -1,10 +1,6 @@
-body {
-    font-family: 'Inter', sans-serif;
-}
 
 .accordion__item {
     box-sizing: border-box;
-    width: 60vw;
     border: 1px solid var(--grey-3, #ACB5BD);
     border-radius: 8px;
     background: var(--white, white);
@@ -16,6 +12,7 @@ body {
     padding-left: 32px;
     padding-bottom: 24px;
     padding-top: 24px;
+    font-family: 'Inter', sans-serif;
 }
 
 .accordion__item[open] {
