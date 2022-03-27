@@ -1,0 +1,29 @@
+.footer {
+    height: 200px;
+    background: var(--white, #ffffff);
+    text-align: center;
+}
+
+.footer__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black, #212429);
+}
+
+.footer__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black, #212429);
+    /* max-width: 640px; */
+    text-align: center;
+    display: inline-block;
+    max-width: 640px;
+    margin: 0;
+
+}
