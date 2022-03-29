@@ -1,14 +1,7 @@
 .header {
     padding: 96px 0 77px;
     background: var(--white, #ffffff);
-}
-
-svg {
-    padding-bottom: 40px;
-    margin-top: -30px;
-    border: 1px solid black;
-    
-}
+} 
 
 
 .header__title {
@@ -19,5 +12,8 @@ svg {
     line-height: 64px;
     color: var(--black, #212429);
     margin: 0;
-
 }
+
+
+
+
