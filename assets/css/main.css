@@ -1,4 +1,10 @@
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/footer/footer.css';
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/container/container.css';
+
 
 :root {
     --white: #ffffff;
@@ -12,6 +18,8 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    --white-preview: #F9FAFC;
+
     --purple-hover: #5028C6;
     --blue-hover: #2342C0;
 
@@ -20,6 +28,10 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+}
+
+html, body {
+    height: 100%;
 }
 
 * {
