@@ -1,5 +1,5 @@
 .header {
-    padding: 96px 0 77px;
+    padding: 22px 0 77px;
     background: var(--white, #ffffff);
 } 
 
@@ -14,6 +14,10 @@
     margin: 0;
 }
 
-
+.header__logo {
+    padding-left: 5px;
+    padding-bottom: 40px;
+    margin-top: -76px;
+}
 
 

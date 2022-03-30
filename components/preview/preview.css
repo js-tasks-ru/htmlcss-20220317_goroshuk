@@ -1,4 +1,14 @@
 .preview {
     background: var(--white-preview, #F9FAFC);
     flex-grow: 1;
+    padding: 68px 0;
+}
+
+.preview__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-preview);
+    
+    
+
 }

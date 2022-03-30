@@ -4,6 +4,7 @@
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
 @import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 
 :root {
@@ -22,12 +23,15 @@
 
     --purple-hover: #5028C6;
     --blue-hover: #2342C0;
+    --shadow-color: rgba(33, 36, 41, 0.05);
 
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --gap-preview: 30px;
 }
 
 html, body {
