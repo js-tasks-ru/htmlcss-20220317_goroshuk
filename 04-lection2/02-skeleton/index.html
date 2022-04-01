@@ -6,26 +6,29 @@
         <link rel="stylesheet" href="./skeleton.css">
     </head>
     <body>
-        <div class="skeleton">
-            <div class="skeleton__upper">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <div class="skeleton">
+    <div class="wrapper">    
+        <div class="container skeleton__container">
+                <svg class="skeleton__avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="32" cy="32" r="32" fill="#DDE2E5"/>
-                    </svg>
-                <div class="wrapper1">
-                    <div class="upper_box1"></div>
-                    <div class="upper_box2"></div>
-                </div>
+                </svg>
+            <div class="skeleton__body">
+                <div class="skeleton__box skeleton__box-short"></div>
+                <div class="skeleton__box skeleton__box-middle"></div>   
             </div>
+        </div>   
                            
+        <div class="container skeleton__container skeleton__container-footer">
             
-            <div class="skeleton__down">
-                <div class="wrapper2">
-                    <div class="down_box1"></div>
-                    <div class="down_box2"></div>
-                </div>
-
+            <div class="skeleton__footer">
+                    <div class="skeleton__box skeleton__box-normal"></div>
+                    <div class="skeleton__box skeleton__box-normal"></div>
             </div>
+            
         </div> 
-
+            
+    </div>
+    </div>
     </body>
 </html>
