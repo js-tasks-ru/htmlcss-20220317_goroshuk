@@ -7,8 +7,5 @@
 .preview__inner {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gap-preview);
-    
-    
-
+    gap: 30px;
 }

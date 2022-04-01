@@ -31,7 +31,6 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-    --gap-preview: 30px;
 }
 
 html, body {
