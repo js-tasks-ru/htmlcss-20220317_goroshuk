@@ -1,0 +1,4 @@
+.preview {
+    background: var(--white-preview, #F9FAFC);
+    flex-grow: 1;
+}
