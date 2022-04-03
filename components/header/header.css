@@ -1,4 +1,5 @@
 .header {
+<<<<<<< HEAD
     padding: 24px 0 77px;
     background: var(--white, #ffffff);
     font-family: 'Inter', sans-serif;
@@ -20,3 +21,20 @@
     margin-bottom: 40px;
 }
 
+=======
+    padding: 96px 0 77px;
+    background: var(--white, #ffffff);
+}
+
+
+.header__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black, #212429);
+    margin: 0;
+
+}
+>>>>>>> master
