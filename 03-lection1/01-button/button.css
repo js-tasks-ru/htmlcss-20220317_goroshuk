@@ -1,6 +1,3 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 .button {
     border-radius: 8px;
@@ -15,6 +12,7 @@ body {
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     border: none;
     vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
 } 
 
 .button[disabled] {

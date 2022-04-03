@@ -6,6 +6,7 @@
 @import '../../components/container/container.css';
 
 
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -35,5 +36,5 @@ html, body {
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
