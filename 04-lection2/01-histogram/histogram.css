@@ -16,16 +16,13 @@
 }
 
 .histogram__information {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 
 
 .histogram__title {
-    flex-basis: 100%;
-    flex-grow: 1;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -39,6 +36,7 @@
     text-decoration: none;
     color: var(--histogram-blue, #4263EB);
     padding-top: 3px;
+    display: flex;
 }
 
 
