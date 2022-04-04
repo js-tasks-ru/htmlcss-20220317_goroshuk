@@ -19,6 +19,10 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    --notification: #D84910;
+
+    --black-2: #000000;
+
     --white-preview: #F9FAFC;
 
     --purple-hover: #5028C6;
@@ -35,6 +39,6 @@ html, body {
     height: 100%;
 }
 
-* {
-    /* font-family: 'Roboto', sans-serif; */
-}
+/* * {
+    font-family: 'Roboto', sans-serif;
+} */

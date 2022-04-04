@@ -1,0 +1,8 @@
+.page__header {
+    padding-bottom: 0;
+    background: var(--white-preview, #F9FAFC);
+}
+
+.header__logo {
+    margin-bottom: 32px;
+}

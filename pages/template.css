@@ -1,0 +1,60 @@
+@import url(../components/header/header.css);
+@import url(../components/footer/footer.css);
+@import url(../components/container/container.css);
+@import url(../assets/css/main.css);
+@import url(template.header/header.css);
+@import url(template.page/page.css);
+@import url(template.container/container.css);
+@import url(template.footer/footer.css);
+
+.main__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    height: 100%;
+    margin-top: 16px;
+}
+
+.wrapper {
+    width: 229px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    color: var(--black-2, #000000);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__link {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black, #212429);
+    text-decoration: none;
+}
+
+.menu__title {
+    margin: 16px 0;
+}
+
+.menu:first-child {
+    margin-top: 0;
+}
+
+.menu__title:first-child {
+    margin-top: 0;
+}
+
+.content {
+    margin-right: 39px;
+    background: var(--white, #FFFFFF);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
+
+.menu__link:focus {
+    color: var(--notification, #D84910);
+}

@@ -1,0 +1,4 @@
+.page__footer {
+    height: auto;
+    background: var(--white-preview, #F9FAFC);
+}
