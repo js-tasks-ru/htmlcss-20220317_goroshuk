@@ -1,11 +1,3 @@
-@import url(../components/header/header.css);
-@import url(../components/footer/footer.css);
-@import url(../components/container/container.css);
-@import url(../assets/css/main.css);
-@import url(template.header/header.css);
-@import url(template.page/page.css);
-@import url(template.container/container.css);
-@import url(template.footer/footer.css);
 
 .main__inner {
     display: grid;
@@ -38,6 +30,7 @@
 
 .menu__title {
     margin: 16px 0;
+    font-weight: 400;
 }
 
 .menu:first-child {

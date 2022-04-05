@@ -5,7 +5,9 @@
 @import '../../components/preview/preview.css';
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
-
+@import '../../template.components/template.footer/footer.css';
+@import '../../template.components/template.header/header.css';
+@import '../../template.components/template.page/page.css';
 
 
 :root {
