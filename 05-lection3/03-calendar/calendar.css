@@ -44,6 +44,7 @@
     color: var(--date-color, #334D6E);
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
@@ -59,12 +60,19 @@
     font-size: 14px;
     line-height: 20px;
     color: var(--day-color, #90A0B7);
-    align-items: flex-start;
+    align-items: center;
 }
 
-.calendar__item {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    /* background-color: var(--selection-date-1, #4263EB);
-    z-index: 2; */
+.calendar__item_marked {
+    background: rgba(160, 177, 245, 0.2);
+}
+
+.calendar__item_marked_start {
+    background: #4263EB;
+    color: var(--white, #fff);
+}
+
+.calendar__item_marked_end {
+    background: #4263EB;
+    color: var(--white, #fff);
 }
