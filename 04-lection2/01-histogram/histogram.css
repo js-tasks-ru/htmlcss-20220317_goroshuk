@@ -4,7 +4,6 @@
     border: 1px solid var(--grey-3,#ACB5BD);
     box-sizing: border-box;
     border-radius: 8px;
-    height: 185px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -16,11 +15,10 @@
 }
 
 .histogram__information {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    margin-bottom: 39px;
+    flex-wrap: wrap;
 }
-
-
 
 .histogram__title {
     font-family: 'Inter';
@@ -30,13 +28,17 @@
     line-height: 24px;
     margin: 0 0 6px 0;
     opacity: 0.8;
+    background: blue;
+    flex: 1 1 auto;
 }
 
 .histogram__link {
     text-decoration: none;
     color: var(--histogram-blue, #4263EB);
     padding-top: 3px;
-    display: flex;
+    display: inline-flex;
+    background: greenyellow;
+    flex: 0 0 auto;
 }
 
 
@@ -61,6 +63,9 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--black, #212429);
+    background: blueviolet;
+    order: 1;
+    flex: 0 0 auto;
 }
 
 
