@@ -1,4 +1,4 @@
-.page {
+.page_style_layout {
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -9,4 +9,5 @@
     line-height: 26px;
     background: var(--white-preview, #F9FAFC);
 }
+
 
