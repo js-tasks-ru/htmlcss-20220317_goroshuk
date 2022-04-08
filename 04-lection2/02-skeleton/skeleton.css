@@ -26,6 +26,7 @@
     gap: 8px;
     justify-content: center;
     margin: 0;
+    width: 100%;
 }
 
 .skeleton__footer {
@@ -34,11 +35,11 @@
     gap: 8px;
 }
 
-.skeleton__box-short {
-    width: 172px;
+.skeleton__box_short {
+    width: 33%;
 }
 
-.skeleton__box-middle {
-    width: 257px;
+.skeleton__box_middle {
+    width: 50%;
 }
 
