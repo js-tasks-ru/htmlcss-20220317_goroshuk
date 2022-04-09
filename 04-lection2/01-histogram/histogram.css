@@ -35,7 +35,15 @@
     color: var(--histogram-blue, #4263EB);
     padding-top: 3px;
     display: inline-flex;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
+}
+
+.histogram__amount {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black, #212429);
+    order: 1;
+    flex: 1 1 100%;
 }
 
 
@@ -56,133 +64,6 @@
 }
 
 
-.histogram__amount {
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--black, #212429);
-    order: 1;
-    flex: 1 1 100%;
-}
 
-
-.chart__column-1 {
-    height: 100%;
-}
-
-.chart__column-2 {
-    height: 70%;
-}
-
-.chart__column-3 {
-    height: 44%;
-}
-
-.chart__column-4 {
-    height: 78%;
-}
-
-.chart__column-5 {
-    height: 44%;
-}
-
-.chart__column-6 {
-    height: 60%;
-}
-
-.chart__column-7 {
-    height: 78%;
-}
-
-.chart__column-8 {
-    height: 100%;
-}
-
-.chart__column-9 {
-    height: 22%;
-}
-
-.chart__column-10 {
-    height: 44%;
-}
-
-.chart__column-11 {
-    height: 60%;
-}
-
-.chart__column-12 {
-    height: 70%;
-}
-
-.chart__column-13 {
-    height: 22%;
-}
-
-.chart__column-14 {
-    height: 100%;
-}
-
-.chart__column-15 {
-    height: 22%;
-}
-
-.chart__column-16 {
-    height: 78%;
-}
-
-.chart__column-17 {
-    height: 60%;
-}
-
-.chart__column-18 {
-    height: 44%;
-}
-
-.chart__column-19 {
-    height: 70%;
-}
-
-.chart__column-20 {
-    height: 60%;
-}
-
-.chart__column-21 {
-    height: 22%;
-}
-
-.chart__column-22 {
-    height: 78%;
-}
-
-.chart__column-23 {
-    height: 70%;
-}
-
-.chart__column-24 {
-    height: 90%;
-}
-
-.chart__column-25 {
-    height: 60%;
-}
-
-.chart__column-26 {
-    height: 22%;
-}
-
-.chart__column-27 {
-    height: 60%;
-}
-
-.chart__column-28 {
-    height: 22%;
-}
-
-.chart__column-29 {
-    height: 70%;
-}
-
-.chart__column-30 {
-    height: 34%;
-}
 
 
