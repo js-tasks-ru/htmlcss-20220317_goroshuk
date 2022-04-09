@@ -11,7 +11,6 @@
     line-height: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .histogram__information {
@@ -28,7 +27,6 @@
     line-height: 24px;
     margin: 0 0 6px 0;
     opacity: 0.8;
-    background: blue;
     flex: 1 1 auto;
 }
 
@@ -37,12 +35,11 @@
     color: var(--histogram-blue, #4263EB);
     padding-top: 3px;
     display: inline-flex;
-    background: greenyellow;
     flex: 0 0 auto;
 }
 
 
-.chart {
+.histogram__chart {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -52,7 +49,7 @@
     gap: 1px;
 }
 
-.chart__column {
+.histogram__chart-column {
     flex: 1 1 9px;
     background: var(--histogram-blue, #4263EB);
     list-style-type: none;
@@ -63,9 +60,8 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--black, #212429);
-    background: blueviolet;
     order: 1;
-    flex: 0 0 auto;
+    flex: 1 1 100%;
 }
 
 
