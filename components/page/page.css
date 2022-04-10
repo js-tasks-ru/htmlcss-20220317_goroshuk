@@ -4,3 +4,12 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 600px)  {
+    .page {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
