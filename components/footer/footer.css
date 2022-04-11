@@ -10,11 +10,13 @@
     color: var(--black, #212429);
 }
 
+
 .footer__title {
     margin: 71px 0 32px 0;
     font-size: inherit;
     font-weight: 500;
 }
+
 
 .footer__subtitle {
     font-weight: 400;
@@ -25,7 +27,8 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 480px) {
 
 .footer {
     display: none;
