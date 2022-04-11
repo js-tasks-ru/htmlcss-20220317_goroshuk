@@ -20,10 +20,13 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+<<<<<<< HEAD
     --notification: #D84910;
 
     --black-2: #000000;
 
+=======
+>>>>>>> fd08a63fb53c98685ef49afe5fcd5c746b939628
     --modal-background: rgb(196, 196, 196, 0.5);
 
     --day-color: #90A0B7;
@@ -50,6 +53,6 @@ html, body {
     height: 100%;
 }
 
-* {
-    /* font-family: 'Roboto', sans-serif; */
-}
+/* * {
+    font-family: 'Roboto', sans-serif;
+} */
