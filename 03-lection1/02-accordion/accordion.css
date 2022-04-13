@@ -1,4 +1,3 @@
-
 .accordion__item {
     box-sizing: border-box;
     border: 1px solid var(--grey-3, #ACB5BD);
@@ -11,7 +10,21 @@
     margin-bottom: 8px;
     padding: 24px 32px;
     font-family: 'Inter', sans-serif;
+    position: relative;
 }
+
+.accordion__closer-open {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    transform: scaleY(-1);
+}
+
+.accordion__closer {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+ }
 
 .accordion__item[open] {
     padding-bottom: 32px;
