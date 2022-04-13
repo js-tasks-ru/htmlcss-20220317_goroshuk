@@ -20,3 +20,27 @@
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 480px) {
+.header {
+    padding: 16px 16px 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.36;
+    color: var(--grey-4, #495057);
+    
+}
+
+
+.header__logo {
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+}
