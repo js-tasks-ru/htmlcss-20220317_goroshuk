@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <svg  mlns="http://www.w3.org/2000/svg">
+=======
+<svg xmlns="http://www.w3.org/2000/svg">
+>>>>>>> 3d2795f5ed6e898cd793bcc972746986fc03d57b
     <defs>
     <symbol id="logo">
         <rect y="1" width="30" height="30" fill="#212429"/>
