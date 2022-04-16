@@ -5,7 +5,7 @@
 }
 
 
-.sidebar__ul {
+.sidebar__list {
     list-style-type: none;
     padding: 0;
     color: var(--black-2, #000000);

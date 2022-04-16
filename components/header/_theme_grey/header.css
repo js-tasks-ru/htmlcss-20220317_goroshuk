@@ -1,8 +1,8 @@
-.header_theme_grey {
+.header_theme-grey {
     padding-bottom: 0;
     background: var(--white-preview, #F9FAFC);
 }
 
-.header__logo {
+.header__logo_theme-grey {
     margin-bottom: 32px;
 }

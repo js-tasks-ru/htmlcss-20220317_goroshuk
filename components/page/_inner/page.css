@@ -1,5 +1,5 @@
-.page_style_layout {
-    height: 100%;
+.page_inner {
+    height: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: 'Inter';
