@@ -1,15 +1,56 @@
 .input__text-form {
     background: var(--white,#FFFFFF);
-    border: 1px solid var(--grey-2, #DDE2E5);
+    outline: 1px solid var(--grey-2, #DDE2E5);
+    border: none;
     box-sizing: border-box;
     border-radius: 8px;
-    padding: 17px auto 13px 24px;
-    width: 21.875em;
-    height: 56px;
-    max-width: 80vw;
-    padding-top: 17px;
-    padding-bottom: 13px;
-    padding-left: 24px;
+    padding: 17px 24px 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4, #495057);
+}
+
+.input__text-form:focus {
+    outline: 1px solid var(--selection-date-1, #4263EB);
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input__wrapper {
+    display: inline-flex;
+    position: relative;
+}
+
+.input__icon_success {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.input__text-form_success:focus + .input__icon_success {
+    display: none;
+}
+
+.input__text-form_error {
+    outline: 1px solid var(--red, #F03D3E);
+}
+
+.input__icon_error {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.input__text-form_error:focus + .input__icon_error {
+    display: none;
+}
+
+.input__text-form:disabled {
+    background: var(--grey-2);
 }
 
 input::-webkit-input-placeholder {
@@ -19,7 +60,6 @@ input::-webkit-input-placeholder {
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-2, #DDE2E5);
-    margin: 17px auto 13px 24px;
 }
 
 input:-moz-placeholder {
@@ -29,4 +69,22 @@ input:-moz-placeholder {
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-2, #DDE2E5);
+}
+
+input:disabled::-webkit-input-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-1,#F8F9FA);
+}
+
+input:disabled:-moz-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-1,#F8F9FA);
 }
