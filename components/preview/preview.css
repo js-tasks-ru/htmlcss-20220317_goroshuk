@@ -16,3 +16,27 @@
     flex-grow: 1;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 480px) {
+
+.preview {
+    padding: 0;
+}
+
+
+.preview__inner {
+    overflow: scroll;
+    padding: 23px 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 16px;
+}
+
+
+.preview__card {
+    padding: 0;
+}
+
+
+
+}
