@@ -3,6 +3,6 @@
     background: var(--white-preview, #F9FAFC);
 }
 
-.header__logo_theme-grey {
+.header_theme-grey .header__logo {
     margin-bottom: 32px;
 }
