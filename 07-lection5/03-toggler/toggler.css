@@ -1,5 +1,6 @@
 .toggler {
     position: relative;
+    height: 52px;
 }
 
 .toggler__state {
