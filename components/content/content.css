@@ -1,0 +1,13 @@
+.content__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    height: 100%;
+    margin-top: 16px;
+}
+
+.content__component-preview {
+    background: var(--white, #FFFFFF);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
