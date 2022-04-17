@@ -1,3 +1,21 @@
+.input {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.input__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3, #ACB5BD);
+}
+
 .input__text-form {
     background: var(--white,#FFFFFF);
     outline: 1px solid var(--grey-2, #DDE2E5);
@@ -5,8 +23,6 @@
     box-sizing: border-box;
     border-radius: 8px;
     padding: 17px 24px 13px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -22,31 +38,19 @@
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
 }
 
-.input {
-    display: inline-flex;
-    position: relative;
+.input__icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 16px;
 }
 
 .input_success .input__icon {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
-}
-
-.input_success .input__text-form:focus + .input__icon {
-    display: none;
+    display: block;
 }
 
 .input_error .input__icon {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
-}
-
-.input_error .input__text-form:focus + .input__icon {
-    display: none;
+    display: block;
 }
 
 .input__text-form:disabled {
@@ -89,3 +93,50 @@
     color: var(--grey-1,#F8F9FA);
 }
 
+.input__helper {
+    display: none;
+    background: var(--selection-date-1, #4263EB);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    white-space: nowrap;
+    top: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+}
+
+.input__helper::after {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 6px solid var(--selection-date-1, #4263EB);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input__text-form:focus ~ .input__helper_success {
+    display: block;
+}
+
+.input__helper_error {
+    background: var(--red, #F03D3E);
+    color: var(--black: #212429);
+}
+
+.input__helper_error::after {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 6px solid var(--red, #F03D3E);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input__text-form:focus ~ .input__helper_error {
+    display: block;
+}
