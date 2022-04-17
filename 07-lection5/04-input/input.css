@@ -13,39 +13,39 @@
     color: var(--grey-4, #495057);
 }
 
+.input_error .input__text-form {
+    outline: 1px solid var(--red, #F03D3E);
+}
+
 .input__text-form:focus {
     outline: 1px solid var(--selection-date-1, #4263EB);
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
 }
 
-.input__wrapper {
+.input {
     display: inline-flex;
     position: relative;
 }
 
-.input__icon_success {
+.input_success .input__icon {
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
 }
 
-.input__text-form_success:focus + .input__icon_success {
+.input_success .input__text-form:focus + .input__icon {
     display: none;
 }
 
-.input__text-form_error {
-    outline: 1px solid var(--red, #F03D3E);
-}
-
-.input__icon_error {
+.input_error .input__icon {
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
 }
 
-.input__text-form_error:focus + .input__icon_error {
+.input_error .input__text-form:focus + .input__icon {
     display: none;
 }
 
@@ -53,7 +53,7 @@
     background: var(--grey-2);
 }
 
-input::-webkit-input-placeholder {
+.input__text-form::-webkit-input-placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -62,7 +62,7 @@ input::-webkit-input-placeholder {
     color: var(--grey-2, #DDE2E5);
 }
 
-input:-moz-placeholder {
+.input__text-form:-moz-placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -71,7 +71,7 @@ input:-moz-placeholder {
     color: var(--grey-2, #DDE2E5);
 }
 
-input:disabled::-webkit-input-placeholder {
+.input__text-form:disabled::-webkit-input-placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -80,7 +80,7 @@ input:disabled::-webkit-input-placeholder {
     color: var(--grey-1,#F8F9FA);
 }
 
-input:disabled:-moz-placeholder {
+.input__text-form:disabled:-moz-placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -88,3 +88,4 @@ input:disabled:-moz-placeholder {
     line-height: 26px;
     color: var(--grey-1,#F8F9FA);
 }
+
