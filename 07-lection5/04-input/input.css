@@ -27,6 +27,8 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-4, #495057);
+    transition: outline 200ms;
+
 }
 
 .input_error .input__text-form {
@@ -93,50 +95,45 @@
     color: var(--grey-1,#F8F9FA);
 }
 
-.input__helper {
-    display: none;
-    background: var(--selection-date-1, #4263EB);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 10px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    white-space: nowrap;
-    top: calc(100% + 6px);
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--white);
+/* В задании нужно было обработать модификаторы success и invalid (error) в состоянии focus.
+Ниже - попытка это выполнить. */
+
+.input_success .input__text-form:focus ~ .input__icon {
+    animation-name: icon-move-success;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} 
+
+.input_error .input__text-form:focus ~ .input__icon {
+    animation-name: icon-move-error;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+} 
+
+.input_error .input__text-form:focus {
+outline: 1px solid var(--selection-date-1, #4263EB);
 }
 
-.input__helper::after {
-    content: "";
-    border: 10px solid transparent;
-    border-bottom: 6px solid var(--selection-date-1, #4263EB);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+@keyframes icon-move-success {
+    0% {top: 50%;}
+    20% {top: 40%;}
+    40% {top: 50%;}
+    50% {top: 42%;}
+    60% {top: 48%;}
+    70% {top: 50%;}
+    80% {top: 45%;}
+    90% {top: 50%;}
+    95% {top: 48%;}
+    100% {top: 50%;}
 }
 
-.input__text-form:focus ~ .input__helper_success {
-    display: block;
-}
-
-.input__helper_error {
-    background: var(--red, #F03D3E);
-    color: var(--black: #212429);
-}
-
-.input__helper_error::after {
-    content: "";
-    border: 10px solid transparent;
-    border-bottom: 6px solid var(--red, #F03D3E);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.input__text-form:focus ~ .input__helper_error {
-    display: block;
+@keyframes icon-move-error {
+    0% { opacity: 1;}
+    20% {opacity: 0.8;}
+    40% {opacity: 0.6;}
+    60% {opacity: 0.4;}
+    80% {opacity: 0.2;}
+    100% {opacity: 0;}
 }
