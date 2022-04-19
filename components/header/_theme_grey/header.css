@@ -1,0 +1,8 @@
+.header_theme-grey {
+    padding-bottom: 0;
+    background: var(--white-preview, #F9FAFC);
+}
+
+.header_theme-grey .header__logo {
+    margin-bottom: 32px;
+}

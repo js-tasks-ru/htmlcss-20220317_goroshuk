@@ -1,0 +1,139 @@
+.input {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.input__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3, #ACB5BD);
+}
+
+.input__text-form {
+    background: var(--white,#FFFFFF);
+    outline: 1px solid var(--grey-2, #DDE2E5);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 17px 24px 13px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4, #495057);
+    transition: outline 200ms;
+
+}
+
+.input_error .input__text-form {
+    outline: 1px solid var(--red, #F03D3E);
+}
+
+.input__text-form:focus {
+    outline: 1px solid var(--selection-date-1, #4263EB);
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input__icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+}
+
+.input_success .input__icon {
+    display: block;
+}
+
+.input_error .input__icon {
+    display: block;
+}
+
+.input__text-form:disabled {
+    background: var(--grey-2);
+}
+
+.input__text-form::-webkit-input-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2, #DDE2E5);
+}
+
+.input__text-form:-moz-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2, #DDE2E5);
+}
+
+.input__text-form:disabled::-webkit-input-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-1,#F8F9FA);
+}
+
+.input__text-form:disabled:-moz-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-1,#F8F9FA);
+}
+
+/* В задании нужно было обработать модификаторы success и invalid (error) в состоянии focus.
+Ниже - попытка это выполнить. */
+
+.input_success .input__text-form:focus ~ .input__icon {
+    animation-name: icon-move-success;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} 
+
+.input_error .input__text-form:focus ~ .input__icon {
+    animation-name: icon-move-error;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+} 
+
+.input_error .input__text-form:focus {
+outline: 1px solid var(--selection-date-1, #4263EB);
+}
+
+@keyframes icon-move-success {
+    0% {top: 50%;}
+    20% {top: 40%;}
+    40% {top: 50%;}
+    50% {top: 42%;}
+    60% {top: 48%;}
+    70% {top: 50%;}
+    80% {top: 45%;}
+    90% {top: 50%;}
+    95% {top: 48%;}
+    100% {top: 50%;}
+}
+
+@keyframes icon-move-error {
+    0% { opacity: 1;}
+    20% {opacity: 0.8;}
+    40% {opacity: 0.6;}
+    60% {opacity: 0.4;}
+    80% {opacity: 0.2;}
+    100% {opacity: 0;}
+}
