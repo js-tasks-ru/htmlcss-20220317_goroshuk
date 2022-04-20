@@ -12,6 +12,12 @@
     border-radius: 12px;
 }
 
+/* .content {
+    background: var(--white-preview, #F9FAFC);
+
+} вставить в мастер-версию, чтобы убрать незакрашенные части div.content, которые появляются из-за того, 
+что содержимое div.content выходит за пределы .page */
+
 @media screen and (max-width: 480px) {
    
     .content__component-preview {
@@ -26,5 +32,6 @@
 
     .content__inner {
     margin: 0;
+    width: 100vw;
     }
 }
