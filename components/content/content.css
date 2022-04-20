@@ -11,3 +11,27 @@
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
 }
+
+/* .content {
+    background: var(--white-preview, #F9FAFC);
+
+} вставить в мастер-версию, чтобы убрать незакрашенные части div.content, которые появляются из-за того, 
+что содержимое div.content выходит за пределы .page */
+
+@media screen and (max-width: 480px) {
+   
+    .content__component-preview {
+    width: 100vw;
+    box-shadow: none;
+    }
+
+    .content {
+    width: 100vw;
+    background: var(--white, #FFFFFF);
+    }
+
+    .content__inner {
+    margin: 0;
+    width: 100vw;
+    }
+}
