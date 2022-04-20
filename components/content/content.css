@@ -12,17 +12,19 @@
     border-radius: 12px;
 }
 
-
 @media screen and (max-width: 480px) {
-    /* .content__inner {
-        width: 100%;
-    } */
-
+   
     .content__component-preview {
-        width: 100vw;
+    width: 100vw;
+    box-shadow: none;
     }
 
     .content {
-        width: 100vw;
+    width: 100vw;
+    background: var(--white, #FFFFFF);
+    }
+
+    .content__inner {
+    margin: 0;
     }
 }

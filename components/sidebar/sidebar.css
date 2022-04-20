@@ -2,6 +2,7 @@
     width: 229px;
     display: flex;
     flex-direction: column;
+    background: var(--white-preview, #F9FAFC);
 }
 
 
@@ -41,5 +42,5 @@
     .sidebar {
         position: fixed;
         right: 100%;
-    }
+}
 }
