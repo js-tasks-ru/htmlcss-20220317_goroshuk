@@ -36,3 +36,10 @@
 .sidebar__link:focus {
     color: var(--notification, #D84910);
 }
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        position: fixed;
+        right: 100%;
+    }
+}

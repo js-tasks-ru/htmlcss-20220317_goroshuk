@@ -2,3 +2,9 @@
     height: auto;
     background: var(--white-preview, #F9FAFC);
 }
+
+@media screen and (max-width: 480px) {
+    .footer_theme_grey {
+        display: none;
+    }
+}

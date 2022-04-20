@@ -6,3 +6,15 @@
 .header_theme-grey .header__logo {
     margin-bottom: 32px;
 }
+
+@media screen and (max-width: 480px) {
+    .header_theme-grey {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .header_theme-grey .header__logo {
+        padding: 0;
+        margin: 0;
+    }
+}

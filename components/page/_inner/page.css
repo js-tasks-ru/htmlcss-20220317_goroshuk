@@ -10,4 +10,9 @@
     background: var(--white-preview, #F9FAFC);
 }
 
+@media screen and (max-width: 480px) {
+    .page_inner {
+        /* width: 100vw; */
+    }
+}
 
