@@ -1,4 +1,4 @@
-.tabs__input_elements:checked ~ .preview__inner .tab__card_container-content {
+.tabs__input_elements:checked ~ .preview .tab__card_container-content {
     display: none;
 }
 
@@ -22,8 +22,8 @@
     line-height: 24px;
     display: flex;
     gap: 40px;
-    position: absolute;
-    bottom: 100%;
+    /* position: absolute; */
+    /* bottom: 100%; */
     color: var(--grey-3);
     box-sizing: border-box;
     width: 100%;
@@ -40,7 +40,7 @@
     position: relative;
 }
 
-::after {
+.tabs__label_all::after , .tabs__label_elements::after , .tabs__label_container::after , .tabs__label_template::after {
     transform: scaleX(0);
     transition: transform 250ms linear;
     content: "";
@@ -56,6 +56,8 @@
     transform: scaleX(1);
 }
 
-::-webkit-scrollbar {
+.tabs__scroller::-webkit-scrollbar {
     display: none;
 }
+
+.tabs {}
