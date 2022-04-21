@@ -2,29 +2,31 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <!-- <script defer src="./burger-menu.js"></script> -->
     </head>
     <body>
+              
         <div class="burger-menu">
-        <label class="burger-menu__label" for="burger-open">Secim akzn
-            <input type="checkbox" class="burger-menu__opener" name="burger-open" id="burger-open">
-            <div class="burger-menu__control">
-                <svg class="burger-menu__icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="../../assets/images/sprite.svg#menu-opener"></use>
-                </svg>
-            </div>
+            <input type="checkbox" class="burger-menu__input" name="burger-button" id="burger-button">
+            <label class="burger-menu__label" for="burger-button">
+                    <svg class="burger-menu__icon burger-menu__icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#menu-opener">
+                    </svg>        
+            </label>
 
-            <label class="burger-menu__label" for="burger-close">
-                <input type="checkbox" class="burger-menu__closer" name="burger-close" id="burger-close">
-                <div class="burger-menu__control">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <use href="../../assets/images/sprite.svg#menu-closer" style="z-index: 1; position:relative;"></use>
-                        <rect style="z-index: 0; position: relative;" width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" xmlns="http://www.w3.org/2000/svg"></rect>
-                    </svg>                     
-                </div>
-        </label>
+            <div class="burger-menu__inner">
+                <label class="burger-menu__label" for="burger-button">
+                    <svg class="burger-menu__icon burger-menu__icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" viewBox="0 0 24 24" rx="12" fill="#DDE2E5" xmlns="http://www.w3.org/2000/svg"></rect>
+                        <use href="../../assets/images/sprite.svg#menu-closer">               
+                    </svg>    
+                </label>
+
+            </div>
+                       
         </div>
     </body>
 </html>
