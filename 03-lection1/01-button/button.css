@@ -9,7 +9,7 @@
     font-size: 16px;
     line-height: 19px;
     color: var(--white, white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    transition: background 200ms ease-in-out, transform 200ms linear, border 200ms ease-in-out;
     border: none;
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
@@ -51,7 +51,10 @@
 
 .button_alternate:hover {
     border: 1px solid var(--black,#212429);
-    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.button:active {
+    transform: translateY(3%);
 }
 
 
