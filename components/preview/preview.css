@@ -2,6 +2,7 @@
     background: var(--white-preview, #F9FAFC);
     flex-grow: 1;
     padding: 68px 0;
+    position: relative;
 }
 
 .preview__inner {
@@ -25,7 +26,7 @@
 
 
 .preview__inner {
-    overflow: scroll;
+    overflow-y: auto;
     padding: 23px 16px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
