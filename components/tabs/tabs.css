@@ -1,12 +1,12 @@
-.tabs__input_elements:checked ~ .preview .tab__card_container-content {
+.tabs__input_elements:checked ~ .preview .tab__card_container {
     display: none;
 }
 
-.tabs__input_container:checked ~ .preview__inner .tab__card_element-content {
+.tabs__input_container:checked ~ .preview .tab__card_element {
     display: none;
 }
 
-.tabs__input_template:checked ~ .preview__inner .card {
+.tabs__input_template:checked ~ .preview .card {
     display: none;
 }
 
@@ -22,8 +22,6 @@
     line-height: 24px;
     display: flex;
     gap: 40px;
-    /* position: absolute; */
-    /* bottom: 100%; */
     color: var(--grey-3);
     box-sizing: border-box;
     width: 100%;
@@ -60,4 +58,3 @@
     display: none;
 }
 
-.tabs {}
