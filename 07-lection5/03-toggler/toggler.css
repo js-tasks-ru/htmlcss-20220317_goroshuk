@@ -22,11 +22,15 @@
     width: 52px;
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    transition: background 500ms linear;
 }
 
 .toggler__icon {
     margin: 2px;
     fill: var(--grey-2,#DDE2E5);
+    position: relative;
+    transition: transform 500ms linear, fill 500ms linear;
 }
 
 .toggler__title {
@@ -45,11 +49,11 @@
 .toggler__input:checked ~ .toggler__state .toggler__control {
     background: var(--selection-date-1, #4263EB);
     border-color: var(--selection-date-1, #4263EB);
-    justify-content: flex-end;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__icon {
     fill: var(--white, #fff);
+    transform: translateX(22px);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__title {
@@ -71,4 +75,5 @@
 .toggler__input:focus ~ .toggler__state .toggler__title {
     text-decoration: underline;
 }
+
 
