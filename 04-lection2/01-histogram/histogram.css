@@ -11,6 +11,7 @@
     line-height: 24px;
     display: flex;
     flex-direction: column;
+
 }
 
 .histogram__information {
@@ -28,6 +29,8 @@
     margin: 0 0 6px 0;
     opacity: 0.8;
     flex: 1 1 auto;
+    animation: column-start 200ms linear;
+   
 }
 
 .histogram__link {
@@ -36,6 +39,9 @@
     padding-top: 3px;
     display: inline-flex;
     flex: 0 1 auto;
+    animation: column-start 200ms linear;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
 }
 
 .histogram__amount {
@@ -44,6 +50,11 @@
     color: var(--black, #212429);
     order: 1;
     flex: 1 1 100%;
+    animation: column-start 200ms linear;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
 }
 
 
@@ -55,6 +66,11 @@
     padding: 0 5px 0 2px;
     margin: 0;
     gap: 1px;
+    animation: column-start 200ms linear;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
 }
 
 .histogram__chart-column {
@@ -63,7 +79,13 @@
     list-style-type: none;
 }
 
+@keyframes column-start {
 
-
+    0% {transform-origin: bottom; transform: scaleY(0);}
+    25% {transform-origin: bottom; transform: scaleY(0.25);}
+    50% {transform-origin: bottom; transform: scaleY(0.5);}
+    75% {transform-origin: bottom; transform: scaleY(0.75);}
+    100% {transform-origin: bottom; transform: scaleY(1);}
+}
 
 
