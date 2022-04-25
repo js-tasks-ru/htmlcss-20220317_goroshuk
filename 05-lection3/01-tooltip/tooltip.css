@@ -9,7 +9,6 @@
 }
 
 .tooltip__helper {
-    /* display: none; */
     background: var(--selection-date-1, #4263EB);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 10px;
@@ -22,10 +21,6 @@
     transform: scale(0) translateX(-50%);
     transition: transform 100ms linear;
     transform-origin: bottom left;
-    /* transform: translate(-50%, 2px);
-    opacity: 0;
-    transition: opacity 100ms linear, transform 200ms linear; */
-
 }
 
 .tooltip__helper:after {
@@ -52,11 +47,6 @@
 
 .tooltip__icon:hover + .tooltip__helper {
     transform: scale(1) translateX(-50%);
-    /* transform-origin: left; */
-    /* opacity: 1;
-    transform: translate(-50%, -3px); */
-
-
 }
 
 .tooltip__icon:hover {
