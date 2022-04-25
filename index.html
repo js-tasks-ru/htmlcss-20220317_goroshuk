@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
     </head>
     <body>
     <div class="page">
@@ -14,6 +15,19 @@
                     <use href="/assets/images/sprite.svg#logo">
                     </svg>                  
             <h1 class="header__title">Reusable component library</h1>
+        </div>
+        <button class="burger-menu__opener" id="burger-menu-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/sprite.svg#menu-opener"></use>
+            </svg>
+        </button>
+    
+        <div class="burger-menu" id="burger-menu">
+            <button class="burger-menu__closer" id="burger-menu-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                </svg>                                     
+            </button>
         </div>
         </header>
 
