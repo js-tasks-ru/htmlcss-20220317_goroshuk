@@ -4,6 +4,7 @@
     border-radius: 12px;
     font-size: 16px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto';
@@ -12,6 +13,7 @@
     font-size: 21px;
     line-height: 25px;
     color: var(--black, #212429);
+    text-decoration: none;
 }
 
 
@@ -34,7 +36,11 @@
 }
 
 .card__content {
+    display: flex;
+    flex: 1 1 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 480px) {
