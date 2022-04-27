@@ -15,23 +15,48 @@
                     <use href="/assets/images/sprite.svg#logo">
                     </svg>                  
             <h1 class="header__title">Reusable component library</h1>
-        </div>
-        <button class="burger-menu__opener" id="burger-menu-open">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="../../assets/images/sprite.svg#menu-opener"></use>
-            </svg>
-        </button>
-    
-        <div class="burger-menu" id="burger-menu">
-            <button class="burger-menu__closer" id="burger-menu-close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="../../assets/images/sprite.svg#menu-closer"></use>    
-                </svg>                                     
+            <button class="burger-menu__opener" id="burger-menu-open">
+                <svg class="burger-menu__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#menu-opener"></use>
+                </svg>
             </button>
         </div>
         </header>
 
+        <div class="burger-menu" id="burger-menu">
+            <div class="container">
+                <div class="burger-menu__header">
+
+                <button class="burger-menu__closer" id="burger-menu-close">
+                    <svg class="burger-menu__icon-closer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" rx="12" xmlns="http://www.w3.org/2000/svg"></rect>
+                        <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                    </svg>                                     
+                </button>
+            
+                <a href="/index.html"><svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo">
+                </svg></a>
+
+            </div>                 
+            </div>
+            <div class="divider"></div>
+            <div class="sidebar sidebar_mobile">
+                <ul class="sidebar__list"><h4 class="sidebar__title">Elements</h4>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Histogram</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Skeleton</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Accordion</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Tooltip</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Modal</a></li>
+                </ul>
+           </div>
+        </div>
+
         <div class="tabs">
+            
             <input type="radio" class="tabs__input tabs__input_all-tab" name="component" id="#all-tab" checked>
             <input type="radio" class="tabs__input tabs__input_elements" name="component" id="#elements-tab">
             <input type="radio" class="tabs__input tabs__input_container" name="component" id="#container-tab">
@@ -100,6 +125,7 @@
                 </div>
             </main>
         </div>
+        
         <footer class="footer">
             <div class="container">
                 <h2 class="footer__title">About</h2>

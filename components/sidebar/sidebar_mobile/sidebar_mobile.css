@@ -1,0 +1,27 @@
+.sidebar_mobile {
+    display: block;
+    padding-left: 16px;
+}
+
+.sidebar_mobile .sidebar__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3, #ACB5BD);
+    margin: 0;
+}
+
+.sidebar_mobile .sidebar__item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sidebar_mobile .sidebar__list {
+    display: flex;
+    gap: 16px;
+}

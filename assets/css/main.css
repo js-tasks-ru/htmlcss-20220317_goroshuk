@@ -11,8 +11,9 @@
 @import '../../components/page/_inner/page.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/content/content.css';
-@import '../../09-lection7/01-burger-menu/burger-menu.css';
-/* @import '../../09-lection7/01-burger-menu/burger-menu.js'; */
+@import '../../components/burger-menu/burger-menu.css';
+@import '../../components/sidebar/sidebar_mobile/sidebar_mobile.css';
+@import '../../components/divider/divider.css';
 
 
 
