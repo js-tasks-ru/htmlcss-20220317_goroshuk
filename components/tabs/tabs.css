@@ -1,12 +1,20 @@
-.tabs__input_elements:checked ~ .preview .tab__card_container {
+.tabs__input_elements:checked ~ .preview .tab__content_elements {
+    display: block;
+}
+
+.tabs__input_container:checked ~ .preview .tab__content_container {
+    display: block;
+}
+
+.tabs__input_template:checked ~ .preview .tab__content_template {
+    display: block;
+}
+
+.tabs__input_elements:checked ~ .preview .tab__content, .tabs__input_container:checked ~ .preview .tab__content, .tabs__input_template:checked ~ .preview .tab__content {
     display: none;
 }
 
-.tabs__input_container:checked ~ .preview .tab__card_element {
-    display: none;
-}
-
-.tabs__input_template:checked ~ .preview .card {
+.tab__content_elements, .tab__content_container, .tab__content_template {
     display: none;
 }
 
@@ -38,7 +46,7 @@
     position: relative;
 }
 
-.tabs__label_all::after , .tabs__label_elements::after , .tabs__label_container::after , .tabs__label_template::after {
+.tabs__label::after {
     transform: scaleX(0);
     transition: transform 250ms linear;
     content: "";
@@ -50,7 +58,7 @@
     margin-top: 8px;
 }
 
-.tabs__label_all:hover::after , .tabs__label_elements:hover::after , .tabs__label_container:hover::after , .tabs__label_template:hover::after {
+.tabs__label:hover::after {
     transform: scaleX(1);
 }
 

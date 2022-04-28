@@ -1,0 +1,12 @@
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .divider {
+        display: block;
+    }
+}

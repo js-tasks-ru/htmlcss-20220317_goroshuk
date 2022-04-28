@@ -6,9 +6,31 @@
 }
 
 .preview__inner {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3 - 30px));
+    grid-auto-rows: minmax(400px, auto);
     gap: 30px;
+    /* justify-content: center; */
+}
+
+.preview .preview__calendar {
+    padding: 14px 15px 20px;
+    max-width: 180px;
+    gap: 16px;
+}
+
+.preview .calendar__title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.preview .calendar__item {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.preview .calendar__item_day {
+    font-size: 12px;
 }
 
 .preview__card {
@@ -16,6 +38,22 @@
     flex-basis: calc((100/3)*1% - 2*30px);
     flex-grow: 1;
     box-sizing: border-box;
+}
+
+.preview__title {
+    font-size: 28px;
+    color: var(--grey-3, #ACB5BD);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.preview__inner_custom-form-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 @media screen and (max-width: 480px) {

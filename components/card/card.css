@@ -16,7 +16,6 @@
     text-decoration: none;
 }
 
-
 .card__footer {
     margin-top: 25px;
     text-align: center;
@@ -43,6 +42,26 @@
     align-items: center;
 }
 
+.card .tooltip__helper {
+    display: block;
+}
+
+.card .tooltip {
+    position: relative;
+    transform: translateY(100%);
+}
+
+.card .avatar {
+    width: 204px;
+    height: 204px;
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 480px) {
 
 
@@ -61,7 +80,6 @@
 
 
 .card__footer {
-    border-top: 1px solid var(--grey-3, #ACB5BD);
     width: 100%;
 }
 
