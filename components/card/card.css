@@ -62,6 +62,23 @@
     justify-content: space-between;
 }
 
+.card__content .modal__inner {
+    position: static;
+    transform: translate(0, 0);
+    padding: 15px 20px 16px;
+    border: 1px solid var(--grey-3, #ACB5BD);
+}
+
+.card__content .modal__title {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.card__content .modal__text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
 @media screen and (max-width: 480px) {
 
 
