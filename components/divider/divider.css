@@ -1,8 +1,7 @@
 .divider {
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: var(--grey-2);
-    display: none;
+    background-color: var(--white-preview, #F9FAFC);
 }
 
 @media screen and (max-width: 480px) {

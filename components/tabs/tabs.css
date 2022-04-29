@@ -91,4 +91,10 @@
     text-decoration: underline;
 }
 
+.tab__content, 
+.tab__content_container,
+.tab__content_elements,
+.tab__content_template {
+    padding: 23px 16px 23px;
+}
 
