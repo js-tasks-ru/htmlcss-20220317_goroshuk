@@ -80,11 +80,33 @@
                     </ul>
                 </div>
                 <div class="content__component-preview">
-                    <div class="content__example">
-                        <h3 class="content__title">Avatar</h3>
-                        <div class="avatar">
-                            <img class="avatar__image" src="../assets/images/avatar-200.jpg" alt="profile avatar">
-                        </div>     
+                    <h3 class="content__title">Button</h3>
+                    <div class="content__example content__example_button">
+                        
+                        <button class="button button_primary">
+                            Primary
+                        </button>
+                
+                        <button class="button button_primary" disabled>
+                            Primary
+                        </button>
+                
+                        <button class="button button_secondary">
+                            Secondary
+                        </button>
+                
+                        <button class="button button_secondary" disabled>
+                            Secondary
+                        </button>
+                
+                        <button class="button button_alternate">
+                            Alternate
+                        </button>
+                
+                        <button class="button button_alternate" disabled>
+                            Alternate
+                        </button>
+                        
                     </div>
                     <div class="tabs">
                         <input type="radio" class="tabs__input tabs__input_html" name="code-view" id="#html-code" checked>
@@ -100,24 +122,82 @@
                         <div class="content__divider"></div>
                      
                         <div class="tab__content_html">
-                            <pre class="content__code"><code>&lt;div class=&quot;avatar&quot;&gt;
-   &lt;img class=&quot;avatar__image&quot; src=&quot;./public/avatar-200.jpg&quot; alt=&quot;profile avatar&quot;&gt;
-&lt;/div&gt;</code></pre>
+                            <pre class="content__code"><code>&lt;button class=&quot;button button_primary&quot;&gt;
+    Primary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_primary&quot; disabled&gt;
+    Primary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_secondary&quot;&gt;
+    Secondary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_secondary&quot; disabled&gt;
+    Secondary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_alternate&quot;&gt;
+    Alternate
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_alternate&quot; disabled&gt;
+    Alternate
+&lt;/button&gt;</code></pre>
                         </div>
 
                         <div class="tab__content_css">
-                            <pre class="content__code"><code>.avatar {
-    width: 102px;
-    height: 102px;
+<pre class="content__code"><pre><code>.button {
+    border-radius: 8px;
+    height: 48px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white, white);
+    transition: background 200ms ease-in-out, transform 200ms linear, border 200ms ease-in-out;
+    border: none;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
 }
-                            
-.avatar__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+
+.button_primary {
+     background: var(--blue, #4263EB);   
 }
-                            </code></pre>
+
+.button_primary:hover {
+    background: var(--blue-hover, #2342C0);
+}
+
+.button_secondary {
+    background: var(--purple, #7048E8);
+}
+
+.button_secondary:hover {
+    background: var(--purple-hover, #5028C6);
+}
+
+.button_alternate {
+    border: 1px solid var(--grey-3,#ACB5BD);  
+    background: var(--white);
+    color: var(--grey-4, #495057);
+}
+
+.button_alternate:hover {
+    border: 1px solid var(--black,#212429);
+}
+
+.button:active {
+    transform: translateY(3%);
+}</code></pre>
                         </div>
                     </div>                                     
                 </div>

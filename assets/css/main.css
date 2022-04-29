@@ -11,11 +11,9 @@
 @import '../../components/page/_inner/page.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/content/content.css';
-<<<<<<< HEAD
 @import '../../components/burger-menu/burger-menu.css';
 @import '../../components/sidebar/sidebar_mobile/sidebar_mobile.css';
 @import '../../components/divider/divider.css';
-=======
 @import '../../components/accordion/accordion.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/calendar/calendar.css';
@@ -31,7 +29,6 @@
 @import '../../components/input/input.css';
 
 
->>>>>>> page-with-components
 
 
 

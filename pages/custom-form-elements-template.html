@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
+</head>
+<body>
+    <page class="page page_inner">
+        <header class="header header_theme-grey">
+            <div class="container">
+                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo"></use>
+                </svg>       
+                <button class="burger-menu__opener" id="burger-menu-open">
+                    <svg class="burger-menu__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#menu-opener"></use>
+                    </svg>
+                </button>           
+            </div>
+        </header>
+
+        <div class="burger-menu" id="burger-menu">
+            <div class="container">
+                <div class="burger-menu__header">
+
+                <button class="burger-menu__closer" id="burger-menu-close">
+                    <svg class="burger-menu__icon-closer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" rx="12" xmlns="http://www.w3.org/2000/svg"></rect>
+                        <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                    </svg>                                     
+                </button>
+            
+                <a href="/index.html"><svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo">
+                </svg></a>
+
+            </div>                 
+            </div>
+            <div class="divider"></div> <!-- изменить -->
+            <div class="sidebar sidebar_mobile">
+                <ul class="sidebar__list"><h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Histogram</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Skeleton</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Accordion</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Tooltip</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Modal</a></li>
+                </ul>
+           </div>
+        </div>
+
+        <main class="content">
+            <div class="container">
+                <div class="content__inner">
+                <div class="sidebar">
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Elements</h4>
+                        <li class="sidebar__item"><a href="avatar-template.html" class="sidebar__link">Avatar</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Containers</h4>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Calendar</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Tooltip</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Skeleton</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Templates</h4>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Modal</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Histogram</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Accordion</a></li>
+                    </ul>
+                </div>
+                <div class="content__component-preview">
+                    <h3 class="content__title">Custom form element</h3>
+                    <div class="content__example content__example_custom-form-elements">
+                        <div class="unnamed"> <!-- переименовать класс и у остальных тоже-->
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <use href="../../assets/images/sprite.svg#checkbox-icon"></use>
+                                        </svg>
+                                    </div>
+                                            <div class="checkbox__title checkbox__title-default">Default</div>
+                                            <div class="checkbox__title checkbox__title-checked">Checked</div>
+                                    </div>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" checked>
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <use href="../../assets/images/sprite.svg#checkbox-icon"></use>
+                                        </svg>
+                                    </div>
+                                            <div class="checkbox__title checkbox__title-default">Default</div>
+                                            <div class="checkbox__title checkbox__title-checked">Checked</div>
+                                    </div>
+                            </label>
+                    
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input" disabled>
+                                <div class="checkbox__state">
+                                    <div class="checkbox__control">
+                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                            <div class="checkbox__title">Disabled</div>
+                                    </div>
+                            </label>
+                        
+
+                            <label for="radio__choise-1" class="radio">
+                                <input type="radio" value="1" name="choise" id="radio__choise-1" class="radio__input">
+                                <div class="radio__state">
+                                    <div class="radio__control">
+                                        <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#radio-checked-inner">
+                                        </svg>
+                                    </div>
+                                    <div class="radio__title">Default</div>
+                                    <div class="radio__title radio__title_checked">Checked</div>
+                                </div>
+                            </label>
+                        
+                            <label for="radio__choise-2" class="radio">
+                                <input type="radio" value="2" name="choise" id="radio__choise-2" class="radio__input">
+                                <div class="radio__state">
+                                    <div class="radio__control">
+                                        <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#radio-checked-inner">
+                                        </svg>
+                                    </div>
+                                    <div class="radio__title">Default</div>
+                                    <div class="radio__title radio__title_checked">Checked</div>
+                                </div>
+                            </label>
+                        
+                            <label class="radio">
+                                    <input type="radio" value="3" name="choise" id="radio__choise-3" class="radio__input" disabled>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <use href="../../assets/images/sprite.svg#radio-checked-inner">
+                                            </svg>
+                                        </div>
+                                        <div class="radio__title">Disabled</div>
+                                        <div class="radio__title radio__title_checked">Checked</div>
+                                    </div>
+                            </label>
+                        </div>
+
+                        <div class="unnamed-2">
+                            <div class="input">
+                                <label for="input-text" class="input__label">Put text here</label>
+                                <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
+                            </div>
+                           
+                    
+                            <div class="input input_success">
+                                <label for="input-text" class="input__label">Put text here</label>
+                                <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
+                                <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="../../assets/images/sprite.svg#check-circle"></use>
+                                </svg>
+                            </div>
+                            
+                    
+                            <div class="input input_error">
+                                    <label for="input-text" class="input__label">Put text here</label>
+                                    <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
+                                    <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#alert-triangle"></use>
+                                    </svg>
+                                </div>
+                            
+                    
+                            <div class="input">
+                                    <label class="input__label">Not here</label>
+                                    <input type="text" disabled class="input__text-form" placeholder="Placeholder">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <input type="radio" class="tabs__input tabs__input_html" name="code-view" id="#html-code" checked>
+                        <input type="radio" class="tabs__input tabs__input_css" name="code-view" id="#css-code">
+
+                    <div class="container">
+                        <nav class="tabs__scroller">
+                            <label for="#html-code" class="tabs__label tabs__label_html">Html</label>
+                            <label for="#css-code" class="tabs__label tabs__label_css">Css</label>
+                        </nav>
+                    </div>
+
+                        <div class="content__divider"></div>
+                     
+                        <div class="tab__content_html">
+                            <pre class="content__code"><code>&lt;label class=&quot;checkbox&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__input&quot;&gt;
+                                &lt;div class=&quot;checkbox__state&quot;&gt;
+                                    &lt;div class=&quot;checkbox__control&quot;&gt;
+                                        &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                            &lt;use href=&quot;../../assets/images/sprite.svg#checkbox-icon&quot;&gt;&lt;/use&gt;
+                                        &lt;/svg&gt;
+                                    &lt;/div&gt;
+                                            &lt;div class=&quot;checkbox__title checkbox__title-default&quot;&gt;Default&lt;/div&gt;
+                                            &lt;div class=&quot;checkbox__title checkbox__title-checked&quot;&gt;Checked&lt;/div&gt;
+                                    &lt;/div&gt;
+                            &lt;/label&gt;
+
+                            &lt;label class=&quot;checkbox&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__input&quot; checked&gt;
+                                &lt;div class=&quot;checkbox__state&quot;&gt;
+                                    &lt;div class=&quot;checkbox__control&quot;&gt;
+                                        &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                            &lt;use href=&quot;../../assets/images/sprite.svg#checkbox-icon&quot;&gt;&lt;/use&gt;
+                                        &lt;/svg&gt;
+                                    &lt;/div&gt;
+                                            &lt;div class=&quot;checkbox__title checkbox__title-default&quot;&gt;Default&lt;/div&gt;
+                                            &lt;div class=&quot;checkbox__title checkbox__title-checked&quot;&gt;Checked&lt;/div&gt;
+                                    &lt;/div&gt;
+                            &lt;/label&gt;
+                    
+                            &lt;label class=&quot;checkbox&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__input&quot; disabled&gt;
+                                &lt;div class=&quot;checkbox__state&quot;&gt;
+                                    &lt;div class=&quot;checkbox__control&quot;&gt;
+                                        &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                            &lt;path d=&quot;M1.5 7.5L5 11L13 2&quot; stroke=&quot;white&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+                                            &lt;/svg&gt;
+                                    &lt;/div&gt;
+                                            &lt;div class=&quot;checkbox__title&quot;&gt;Disabled&lt;/div&gt;
+                                    &lt;/div&gt;
+                            &lt;/label&gt;
+                        
+
+                            &lt;label for=&quot;radio__choise-1&quot; class=&quot;radio&quot;&gt;
+                                &lt;input type=&quot;radio&quot; value=&quot;1&quot; name=&quot;choise&quot; id=&quot;radio__choise-1&quot; class=&quot;radio__input&quot;&gt;
+                                &lt;div class=&quot;radio__state&quot;&gt;
+                                    &lt;div class=&quot;radio__control&quot;&gt;
+                                        &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                        &lt;use href=&quot;../../assets/images/sprite.svg#radio-checked-inner&quot;&gt;
+                                        &lt;/svg&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;radio__title&quot;&gt;Default&lt;/div&gt;
+                                    &lt;div class=&quot;radio__title radio__title_checked&quot;&gt;Checked&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/label&gt;
+                        
+                            &lt;label for=&quot;radio__choise-2&quot; class=&quot;radio&quot;&gt;
+                                &lt;input type=&quot;radio&quot; value=&quot;2&quot; name=&quot;choise&quot; id=&quot;radio__choise-2&quot; class=&quot;radio__input&quot;&gt;
+                                &lt;div class=&quot;radio__state&quot;&gt;
+                                    &lt;div class=&quot;radio__control&quot;&gt;
+                                        &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                        &lt;use href=&quot;../../assets/images/sprite.svg#radio-checked-inner&quot;&gt;
+                                        &lt;/svg&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;radio__title&quot;&gt;Default&lt;/div&gt;
+                                    &lt;div class=&quot;radio__title radio__title_checked&quot;&gt;Checked&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/label&gt;
+                        
+                            &lt;label class=&quot;radio&quot;&gt;
+                                    &lt;input type=&quot;radio&quot; value=&quot;3&quot; name=&quot;choise&quot; id=&quot;radio__choise-3&quot; class=&quot;radio__input&quot; disabled&gt;
+                                    &lt;div class=&quot;radio__state&quot;&gt;
+                                        &lt;div class=&quot;radio__control&quot;&gt;
+                                            &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                                            &lt;use href=&quot;../../assets/images/sprite.svg#radio-checked-inner&quot;&gt;
+                                            &lt;/svg&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;radio__title&quot;&gt;Disabled&lt;/div&gt;
+                                        &lt;div class=&quot;radio__title radio__title_checked&quot;&gt;Checked&lt;/div&gt;
+                                    &lt;/div&gt;
+                            &lt;/label&gt;</code></pre>
+                        </div>
+
+                        <div class="tab__content_css">
+                            <pre class="content__code"><code>.avatar {
+    width: 102px;
+    height: 102px;
+}
+                            
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+                            </code></pre>
+                        </div>
+                    </div>                                     
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer class="footer footer_theme_grey">
+            <div class="container">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__subtitle">This project is a collection of professionally designed, pre-built, 
+                    fully responsive HTML snippets you can drop into your projects. 
+                    Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </div>
+
+        </footer>
+
+    </page>
+    
+</body>
+</html>

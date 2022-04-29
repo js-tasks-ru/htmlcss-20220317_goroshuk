@@ -98,3 +98,33 @@
     padding: 23px 16px 23px;
 }
 
+.tabs__content_html-code {
+    max-width: 100%;
+    width: 100%;
+}
+
+.tabs .content__code {
+    overflow-x: auto;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tabs__input_html:checked ~ .container .tabs__label_html, 
+.tabs__input_css:checked ~ .container.tabs__label_css {
+    color: #212429;
+}
+
+.tabs__input_html:checked ~ .container .tabs__label_html::after, 
+.tabs__input_css:checked ~ .container .tabs__label_css::after {
+    transform: scaleX(1);
+}
+
+.tabs__input_html:checked ~ .tab__content_css {
+    display: none;
+}
+
+.tabs__input_css:checked ~ .tab__content_html {
+    display: none;
+}
