@@ -6,6 +6,10 @@
     margin-top: 16px;
 }
 
+.content {
+    background: var(--white-preview, #F9FAFC);
+}
+
 .content__component-preview {
     background: var(--white, #FFFFFF);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
