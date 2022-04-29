@@ -9,6 +9,7 @@
 }
 
 .tooltip__helper {
+    display: none;
     background: var(--selection-date-1, #4263EB);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 10px;
@@ -18,9 +19,7 @@
     white-space: nowrap;
     bottom: calc(100% + 6px);
     left: 50%;
-    transform: scale(0) translateX(-50%);
-    transition: transform 100ms linear;
-    transform-origin: bottom left;
+    transform: translateX(-50%);
 }
 
 .tooltip__helper:after {
@@ -46,7 +45,7 @@
 }
 
 .tooltip__icon:hover + .tooltip__helper {
-    transform: scale(1) translateX(-50%);
+    display: block;
 }
 
 .tooltip__icon:hover {

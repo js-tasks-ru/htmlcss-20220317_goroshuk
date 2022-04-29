@@ -4,6 +4,7 @@
     border-radius: 12px;
     font-size: 16px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto';
@@ -12,8 +13,9 @@
     font-size: 21px;
     line-height: 25px;
     color: var(--black, #212429);
+    text-decoration: none;
+    padding: 16px;
 }
-
 
 .card__footer {
     margin-top: 25px;
@@ -33,27 +35,86 @@
     margin: 6px 0 0 0;
 }
 
+.card__content {
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .tooltip__helper {
+    display: block;
+}
+
+.card .tooltip {
+    position: relative;
+    transform: translateY(100%);
+}
+
+.card .avatar {
+    width: 204px;
+    height: 204px;
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__content .modal__inner {
+    position: static;
+    transform: translate(0, 0);
+    padding: 15px 20px 16px;
+    border: 1px solid var(--grey-3, #ACB5BD);
+}
+
+.card__content .modal__title {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.card__content .modal__text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card__divider {
+    display: none;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white-preview, #F9FAFC);
+}
+
 @media screen and (max-width: 480px) {
 
 
 .card__title {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 24px;
 }
-
 
 .card__subtitle {
     display: none;
 }
 
-
 .card__footer {
-    border-top: 1px solid var(--grey-3, #ACB5BD);
     width: 100%;
 }
 
+.card__divider {
+    display: block;
+    width: calc(100vw - 32px);
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
 }
 
