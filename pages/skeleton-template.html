@@ -80,32 +80,25 @@
                     </ul>
                 </div>
                 <div class="content__component-preview">
-                    <h3 class="content__title">Button</h3>
-                    <div class="content__example content__example_button">
+                    <h3 class="content__title">Skeleton</h3>
+                    <div class="content__example content__example_skeleton">
                         
-                        <button class="button button_primary">
-                            Primary
-                        </button>
-                
-                        <button class="button button_primary" disabled>
-                            Primary
-                        </button>
-                
-                        <button class="button button_secondary">
-                            Secondary
-                        </button>
-                
-                        <button class="button button_secondary" disabled>
-                            Secondary
-                        </button>
-                
-                        <button class="button button_alternate">
-                            Alternate
-                        </button>
-                
-                        <button class="button button_alternate" disabled>
-                            Alternate
-                        </button>
+                        <div class="skeleton">
+                            <div class="skeleton__container">
+                                    <svg class="skeleton__avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32" cy="32" r="32" fill="#DDE2E5"/>
+                                    </svg>
+                                <div class="skeleton__body">
+                                    <div class="skeleton__box skeleton__box_short"></div>
+                                    <div class="skeleton__box skeleton__box_middle"></div>   
+                                </div>
+                            </div>   
+                            
+                            <div class="skeleton__footer">
+                                    <div class="skeleton__box skeleton__box_normal"></div>
+                                    <div class="skeleton__box skeleton__box_normal"></div>
+                            </div>  
+                        </div>
                         
                     </div>
                     <div class="tabs">
@@ -122,81 +115,78 @@
                         <div class="content__divider"></div>
                      
                         <div class="tab__content_html">
-                            <pre class="content__code"><code>&lt;button class=&quot;button button_primary&quot;&gt;
-    Primary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_primary&quot; disabled&gt;
-    Primary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_secondary&quot;&gt;
-    Secondary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_secondary&quot; disabled&gt;
-    Secondary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_alternate&quot;&gt;
-    Alternate
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_alternate&quot; disabled&gt;
-    Alternate
-&lt;/button&gt;</code></pre>
+                            <pre class="content__code"><code>&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__container&quot;&gt;
+        &lt;svg class=&quot;skeleton__avatar&quot; width=&quot;64&quot; height=&quot;64&quot; viewBox=&quot;0 0 64 64&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+            &lt;circle cx=&quot;32&quot; cy=&quot;32&quot; r=&quot;32&quot; fill=&quot;#DDE2E5&quot;/&gt;
+        &lt;/svg&gt;
+        &lt;div class=&quot;skeleton__body&quot;&gt;
+            &lt;div class=&quot;skeleton__box skeleton__box_short&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__box skeleton__box_middle&quot;&gt;&lt;/div&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;   
+
+    &lt;div class=&quot;skeleton__footer&quot;&gt;
+        &lt;div class=&quot;skeleton__box skeleton__box_normal&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__box skeleton__box_normal&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;  
+&lt;/div&gt;</code></pre>
                         </div>
 
                         <div class="tab__content_css">
-<pre class="content__code"><code>.button {
-    border-radius: 8px;
-    height: 48px;
-    padding: 15px;
+<pre class="content__code"><code>.skeleton {
+    background: var(--white,#FFFFFF);
+    border: 1px solid var(--grey-3, #ACB5BD);
     box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--white, white);
-    transition: background 200ms ease-in-out, transform 200ms linear, border 200ms ease-in-out;
-    border: none;
-    vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-} 
-
-.button[disabled] {
-    opacity: 0.5;
-    pointer-events: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 40px 32px 24px;
 }
 
-.button_primary {
-     background: var(--blue, #4263EB);   
+.skeleton__box {
+    height: 20px;
+    width: 100%;
+    animation-fill-mode: forwards;
+    animation: background-move 1500ms linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background-size: 200%;
+    display: inline-block;
 }
 
-.button_primary:hover {
-    background: var(--blue-hover, #2342C0);
+.skeleton__container {
+    display: flex;
+    gap: 16px;
 }
 
-.button_secondary {
-    background: var(--purple, #7048E8);
+.skeleton__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
 }
 
-.button_secondary:hover {
-    background: var(--purple-hover, #5028C6);
+.skeleton__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.button_alternate {
-    border: 1px solid var(--grey-3,#ACB5BD);  
-    background: var(--white);
-    color: var(--grey-4, #495057);
+.skeleton__box_short {
+    width: 33%;
 }
 
-.button_alternate:hover {
-    border: 1px solid var(--black,#212429);
+.skeleton__box_middle {
+    width: 50%;
 }
 
-.button:active {
-    transform: translateY(3%);
+@keyframes background-move {
+    0% {background-position: 200%;}
+    100% {background-position: -200%;}
 }</code></pre>
                         </div>
                     </div>                                     

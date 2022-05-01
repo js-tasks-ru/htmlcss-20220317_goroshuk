@@ -18,6 +18,12 @@
     display: none;
 }
 
+.burger-menu__divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+}
+
 @media screen and (max-width: 480px) {
 
 .burger-menu {

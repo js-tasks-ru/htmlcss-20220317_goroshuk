@@ -80,124 +80,137 @@
                     </ul>
                 </div>
                 <div class="content__component-preview">
-                    <h3 class="content__title">Button</h3>
-                    <div class="content__example content__example_button">
+                    <h3 class="content__title">Modal</h3>
+                    <div class="content__example content__example_modal">
                         
-                        <button class="button button_primary">
-                            Primary
+                        <button class="button button_primary" id="modal-open">
+                            Open modal
                         </button>
-                
-                        <button class="button button_primary" disabled>
-                            Primary
-                        </button>
-                
-                        <button class="button button_secondary">
-                            Secondary
-                        </button>
-                
-                        <button class="button button_secondary" disabled>
-                            Secondary
-                        </button>
-                
-                        <button class="button button_alternate">
-                            Alternate
-                        </button>
-                
-                        <button class="button button_alternate" disabled>
-                            Alternate
-                        </button>
+                        <div class="modal" id="modal">
+                            <div class="modal__inner">
+                                <button class="modal__closer" id="modal-close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#closer"></use>
+                                </svg>
+                                    </button>
+                                <h3 class="modal__title">Modal title</h3>
+                                <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
                         
                     </div>
                     <div class="tabs">
                         <input type="radio" class="tabs__input tabs__input_html" name="code-view" id="#html-code" checked>
                         <input type="radio" class="tabs__input tabs__input_css" name="code-view" id="#css-code">
+                        <input type="radio" class="tabs__input tabs__input_js" name="code-view" id="#js-code">
 
                     <div class="container">
                         <nav class="tabs__scroller">
                             <label for="#html-code" class="tabs__label tabs__label_html">Html</label>
                             <label for="#css-code" class="tabs__label tabs__label_css">Css</label>
+                            <label for="#js-code" class="tabs__label tabs__label_js">Js</label>
                         </nav>
                     </div>
 
                         <div class="content__divider"></div>
                      
                         <div class="tab__content_html">
-                            <pre class="content__code"><code>&lt;button class=&quot;button button_primary&quot;&gt;
-    Primary
+                            <pre class="content__code"><code>
+&lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;
+    Open modal
 &lt;/button&gt;
-                    
-&lt;button class=&quot;button button_primary&quot; disabled&gt;
-    Primary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_secondary&quot;&gt;
-    Secondary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_secondary&quot; disabled&gt;
-    Secondary
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_alternate&quot;&gt;
-    Alternate
-&lt;/button&gt;
-                    
-&lt;button class=&quot;button button_alternate&quot; disabled&gt;
-    Alternate
-&lt;/button&gt;</code></pre>
+&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__inner&quot;&gt;
+        &lt;button class=&quot;modal__closer&quot; id=&quot;modal-close&quot;&gt;
+            &lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;use href=&quot;/assets/images/sprite.svg#closer&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;h3 class=&quot;modal__title&quot;&gt;Modal title&lt;/h3&gt;
+        &lt;p class=&quot;modal__text&quot;&gt;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                         </div>
 
                         <div class="tab__content_css">
-<pre class="content__code"><code>.button {
-    border-radius: 8px;
-    height: 48px;
-    padding: 15px;
+<pre class="content__code"><code>.modal {
+    padding: 40px 40px 47px;
+    background: var(--modal-background, rgba(196, 196, 196, 0.5));
+    height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--white, white);
-    transition: background 200ms ease-in-out, transform 200ms linear, border 200ms ease-in-out;
+    font-family: 'Inter';
+    font-style: normal;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal__inner {
+    padding: 30px 40px 33px;
+    background: var(--white,#FFFFFF);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90vw;
+}
+
+.modal__closer {
+    display: inline-block;
     border: none;
-    vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-} 
-
-.button[disabled] {
-    opacity: 0.5;
-    pointer-events: none;
+    background: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 
-.button_primary {
-     background: var(--blue, #4263EB);   
+.modal__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--month-year-color, #334D6E);
+    margin: 0;
 }
 
-.button_primary:hover {
-    background: var(--blue-hover, #2342C0);
-}
-
-.button_secondary {
-    background: var(--purple, #7048E8);
-}
-
-.button_secondary:hover {
-    background: var(--purple-hover, #5028C6);
-}
-
-.button_alternate {
-    border: 1px solid var(--grey-3,#ACB5BD);  
-    background: var(--white);
+.modal__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--grey-4, #495057);
-}
-
-.button_alternate:hover {
-    border: 1px solid var(--black,#212429);
-}
-
-.button:active {
-    transform: translateY(3%);
+    margin: 0;
 }</code></pre>
+                        </div>
+
+                        <div class="tab__content_js">
+                            <pre class="content__code"><code>(function() {
+const close = document.getElementById('modal-close');
+const modal = document.getElementById('modal');
+const modalOpen = document.getElementById('modal-open');
+
+if (!close || !modalOpen || !modal) {
+    return;
+}
+
+modalOpen.addEventListener('click', () =&gt; {
+    modal.style.display = 'block';
+    document.body.overflow = 'hidden';
+});
+
+close.addEventListener('click', () =&gt; {
+    modal.style.display = 'none';
+    document.body.overflow = 'initial';
+});
+})();</code></pre>
+
                         </div>
                     </div>                                     
                 </div>
@@ -217,4 +230,5 @@
     </page>
     
 </body>
+<script src="../components/modal/index.js"></script>
 </html>
