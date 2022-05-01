@@ -47,20 +47,23 @@
 }
 
 .content__example_custom-form-elements {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 
 .content__example_custom-form-elements .unnamed {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: flex-start;
+    justify-items: start;    
 }
 
 .content__example_custom-form-elements .unnamed-2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .content__example_button {

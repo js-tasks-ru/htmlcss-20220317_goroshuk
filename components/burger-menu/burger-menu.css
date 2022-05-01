@@ -38,8 +38,14 @@
 }
 
 .burger-menu__header {
-    padding-top: 16px;
+    padding: 16px 0;
     margin-left: 0;
+}
+
+.burger-menu__logo {
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
 

@@ -20,6 +20,10 @@
     margin-bottom: 32px;
 }
 
+.header__menu-opener {
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
 .header {
     padding: 16px 16px 32px;
@@ -42,5 +46,18 @@
     position: relative;
     left: 50%; 
     transform: translateX(-50%);
+}
+
+.header__menu-opener {
+    background: transparent;
+    border: none;
+    display: block;
+    padding: 0;
+}
+
+.header__icon-opener {
+position: absolute;
+    left: 19px;
+    top: 22px;
 }
 }
