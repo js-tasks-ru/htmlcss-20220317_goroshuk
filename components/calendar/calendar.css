@@ -1,5 +1,5 @@
 .calendar {
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3, #ACB5BD);
     border-radius: 8px;
     background: var(--white, #FFFFFF);
     max-width: 300px;
