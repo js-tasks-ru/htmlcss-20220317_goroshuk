@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
+</head>
+<body>
+    <page class="page page_inner">
+        <header class="header header_theme-grey">
+            <div class="container">
+                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo"></use>
+                </svg>       
+                <button class="header__menu-opener" id="burger-menu-open">
+                    <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#menu-opener"></use>
+                    </svg>
+                </button>           
+            </div>
+        </header>
+
+        <div class="burger-menu" id="burger-menu">
+            
+                <div class="burger-menu__header">
+
+                <button class="burger-menu__closer" id="burger-menu-close">
+                    <svg class="burger-menu__icon-closer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" rx="12" xmlns="http://www.w3.org/2000/svg"></rect>
+                        <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                    </svg>                                     
+                </button>
+            
+                <a href="/index.html"><svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo">
+                </svg></a>
+
+            </div>                 
+           
+            <div class="burger-menu__divider"></div> <!-- изменить -->
+            <div class="sidebar sidebar_mobile">
+                <ul class="sidebar__list"><h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__item"><a href="../pages/avatar-template.html" class="sidebar__link">Avatar</a></li>
+                    <li class="sidebar__item"><a href="../pages/custom-form-elements-template.html" class="sidebar__link">Custom form elements</a></li>
+                    <li class="sidebar__item"><a href="../pages/button-template.html" class="sidebar__link">Button</a></li>
+                    <li class="sidebar__item"><a href="../pages/histogram-template.html" class="sidebar__link">Histogram</a></li>
+                    <li class="sidebar__item"><a href="../pages/skeleton-template.html" class="sidebar__link">Skeleton</a></li>
+                    <li class="sidebar__item"><a href="../pages/accordion-template.html" class="sidebar__link">Accordion</a></li>
+                    <li class="sidebar__item"><a href="../pages/tooltip-template.html" class="sidebar__link">Tooltip</a></li>
+                    <li class="sidebar__item"><a href="../pages/modal-template.html" class="sidebar__link">Modal</a></li>
+                    <li class="sidebar__item"><a href="../pages/calendar-template.html" class="sidebar__link">Calendar</a></li>
+                </ul>
+           </div>
+        </div>
+
+        <main class="content">
+            <div class="container">
+                <div class="content__inner">
+                <div class="sidebar">
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Elements</h4>
+                        <li class="sidebar__item"><a href="avatar-template.html" class="sidebar__link">Avatar</a></li>
+                        <li class="sidebar__item"><a href="custom-form-elements-template.html" class="sidebar__link">Custom form elements</a></li>
+                        <li class="sidebar__item"><a href="button-template.html" class="sidebar__link">Button</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Containers</h4>
+                        <li class="sidebar__item"><a href="calendar-template.html" class="sidebar__link">Calendar</a></li>
+                        <li class="sidebar__item"><a href="tooltip-template.html" class="sidebar__link">Tooltip</a></li>
+                        <li class="sidebar__item"><a href="skeleton-template.html" class="sidebar__link">Skeleton</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Templates</h4>
+                        <li class="sidebar__item"><a href="modal-template.html" class="sidebar__link">Modal</a></li>
+                        <li class="sidebar__item"><a href="histogram-template.html" class="sidebar__link">Histogram</a></li>
+                        <li class="sidebar__item"><a href="accordion-template.html" class="sidebar__link">Accordion</a></li>
+                    </ul>
+                </div>
+                <div class="content__component-preview">
+                    <h3 class="content__title">Histogram</h3>
+                    <div class="content__example content__example_histogram">
+                        
+                        <div class="histogram">
+                            <div class="histogram__information">
+                                <h2 class="histogram__title">Total Orders</h2>
+                                <div class="histogram__amount">50254</div>
+                                <a class="histogram__link" href="#">View all</a>
+                            </div>
+                            
+                            <ul class="histogram__chart">
+                                <li class="histogram__chart-column" style="height: 100%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 70%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 44%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 78%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 44%"><span></span></li>
+                
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 78%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 100%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 44%"><span></span></li>
+                
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 70%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 100%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                
+                                <li class="histogram__chart-column" style="height: 78%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 44%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 70%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 78%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 70%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 90%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 60%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 22%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 70%"><span></span></li>
+                                <li class="histogram__chart-column" style="height: 34%"><span></span></li>
+                            </ul>
+                
+                        </div>
+                
+                        
+                    </div>
+                    <div class="tabs">
+                        <input type="radio" class="tabs__input tabs__input_html" name="code-view" id="#html-code" checked>
+                        <input type="radio" class="tabs__input tabs__input_css" name="code-view" id="#css-code">
+
+                    <div class="container">
+                        <nav class="tabs__scroller">
+                            <label for="#html-code" class="tabs__label tabs__label_html">Html</label>
+                            <label for="#css-code" class="tabs__label tabs__label_css">Css</label>
+                        </nav>
+                    </div>
+
+                        <div class="content__divider"></div>
+                     
+                        <div class="tab__content_html">
+                            <pre class="content__code"><code>&lt;div class=&quot;histogram&quot;&gt;
+    &lt;div class=&quot;histogram__information&quot;&gt;
+        &lt;h2 class=&quot;histogram__title&quot;&gt;Total Orders&lt;/h2&gt;
+        &lt;div class=&quot;histogram__amount&quot;&gt;50254&lt;/div&gt;
+        &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot;&gt;View all&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;ul class=&quot;histogram__chart&quot;&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 100%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 70%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 44%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 78%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 44%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 78%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 100%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 44%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 70%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 100%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 78%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 44%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 70%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 78%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 70%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 90%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 60%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 22%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 70%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li class=&quot;histogram__chart-column&quot; style=&quot;height: 34%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <div class="tab__content_css">
+<pre class="content__code"><code>.histogram {
+    padding: 15px 24px 23px;
+    background: var(--white,#FFFFFF);
+    border: 1px solid var(--grey-3,#ACB5BD);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.histogram__information {
+    display: flex;
+    margin-bottom: 39px;
+    flex-wrap: wrap;
+}
+
+.histogram__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+    opacity: 0.8;
+    flex: 1 1 auto;
+    animation: column-start 200ms linear;
+   
+}
+
+.histogram__link {
+    text-decoration: none;
+    color: var(--histogram-blue, #4263EB);
+    padding-top: 3px;
+    display: inline-flex;
+    flex: 0 1 auto;
+    animation: column-start 200ms linear;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+}
+
+.histogram__amount {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black, #212429);
+    order: 1;
+    flex: 1 1 100%;
+    animation: column-start 200ms linear;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
+}
+
+
+.histogram__chart {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0 5px 0 2px;
+    margin: 0;
+    gap: 1px;
+    animation: column-start 200ms linear;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
+}
+
+.histogram__chart-column {
+    flex: 1 1 9px;
+    background: var(--histogram-blue, #4263EB);
+    list-style-type: none;
+}
+
+@keyframes column-start {
+
+    0% {transform-origin: bottom; transform: scaleY(0);}
+    25% {transform-origin: bottom; transform: scaleY(0.25);}
+    50% {transform-origin: bottom; transform: scaleY(0.5);}
+    75% {transform-origin: bottom; transform: scaleY(0.75);}
+    100% {transform-origin: bottom; transform: scaleY(1);}
+}
+</code></pre>
+                        </div>
+                    </div>                                     
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer class="footer footer_theme_grey">
+            <div class="container">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__subtitle">This project is a collection of professionally designed, pre-built, 
+                    fully responsive HTML snippets you can drop into your projects. 
+                    Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </div>
+
+        </footer>
+
+    </page>
+    
+</body>
+</html>

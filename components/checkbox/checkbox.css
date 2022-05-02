@@ -1,0 +1,101 @@
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+}
+
+.checkbox__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox__input:focus + .checkbox__state .checkbox__title {
+    text-decoration: underline;
+}
+
+.checkbox__state {
+    display: flex;
+    align-items: center; 
+    gap: 12px;
+}
+
+.checkbox__control {
+    background: var(--white,#FFFFFF);
+    border: 1px solid var(--grey-2, #DDE2E5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.checkbox__icon {
+    visibility: hidden;
+}
+
+.checkbox__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4,#495057);
+}
+
+.checkbox__title-default {
+    margin-right: 12px;
+}
+
+.checkbox__title-checked {
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__state .checkbox__control {
+    background: var(--selection-date-1, #4263EB);
+    border-color: var(--selection-date-1, #4263EB);
+}
+
+.checkbox__input:checked + .checkbox__state .checkbox__icon {
+    visibility: visible;
+}
+
+.checkbox__input:checked + .checkbox__state .checkbox__title-default {
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__state .checkbox__title-checked {
+    display: block;
+}
+
+.checkbox__input:disabled + .checkbox__state .checkbox__title {
+    color: var(--grey-2,#DDE2E5);
+}
+
+.checkbox__input:disabled + .checkbox__state .checkbox__control {
+    background: var(--grey-2, #DDE2E5);
+    border-color: var(--grey-2, #DDE2E5);
+}
+
+.checkbox__input:checked ~ .checkbox__state::before {
+    content: "";
+    position: absolute;
+    animation: check-shadow 500ms linear;
+    border-radius: 4px;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+@keyframes check-shadow {
+
+    0% {
+        box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100% {
+        box-shadow: 0 0 0 1.5rem var(--checkbox-shadow, rgba(189, 195, 199, 0));
+    }
+}

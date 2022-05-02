@@ -1,17 +1,32 @@
-.tabs__input_elements:checked ~ .preview .tab__card_container {
+.tabs__input_elements:checked ~ .preview .tab__content_elements {
+    display: block;
+}
+
+.tabs__input_container:checked ~ .preview .tab__content_container {
+    display: block;
+}
+
+.tabs__input_template:checked ~ .preview .tab__content_template {
+    display: block;
+}
+
+.tabs__input_elements:checked ~ .preview .tab__content,
+.tabs__input_container:checked ~ .preview .tab__content,
+.tabs__input_template:checked ~ .preview .tab__content {
     display: none;
 }
 
-.tabs__input_container:checked ~ .preview .tab__card_element {
-    display: none;
-}
-
-.tabs__input_template:checked ~ .preview .card {
+.tab__content_elements,
+.tab__content_container,
+.tab__content_template {
     display: none;
 }
 
 .tabs__input {
-    display: none;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    outline: transparent;
+
 }
 
 .tabs__scroller {
@@ -31,6 +46,7 @@
 
 .tabs__label:hover {
     color: var(--black);
+    cursor: pointer;
 }
 
 .tabs__label {
@@ -38,19 +54,19 @@
     position: relative;
 }
 
-.tabs__label_all::after , .tabs__label_elements::after , .tabs__label_container::after , .tabs__label_template::after {
+.tabs__label::after {
     transform: scaleX(0);
     transition: transform 250ms linear;
     content: "";
     display: block;
     width: 100%;
-    background-color: black;
+    background-color: var(--black, #212429);
     height: 5px;
     position: relative;
     margin-top: 8px;
 }
 
-.tabs__label_all:hover::after , .tabs__label_elements:hover::after , .tabs__label_container:hover::after , .tabs__label_template:hover::after {
+.tabs__label:hover::after {
     transform: scaleX(1);
 }
 
@@ -58,3 +74,65 @@
     display: none;
 }
 
+.tabs__input_all-tab:checked ~ .container .tabs__label_all-tab, 
+.tabs__input_elements:checked ~ .container .tabs__label_elements, 
+.tabs__input_container:checked ~ .container .tabs__label_container, 
+.tabs__input_template:checked ~ .container .tabs__label_template {
+    color: #212429;
+}
+
+.tabs__input_all-tab:checked ~ .container .tabs__label_all-tab::after, 
+.tabs__input_elements:checked ~ .container .tabs__label_elements::after, 
+.tabs__input_container:checked ~ .container .tabs__label_container::after, 
+.tabs__input_template:checked ~ .container .tabs__label_template::after {
+    transform: scaleX(1);
+}
+
+.tabs__input_all-tab:focus ~ .container .tabs__label_all-tab, 
+.tabs__input_elements:focus ~ .container .tabs__label_elements, 
+.tabs__input_container:focus ~ .container .tabs__label_container, 
+.tabs__input_template:focus ~ .container .tabs__label_template {
+    text-decoration: underline;
+}
+
+.tab__content, 
+.tab__content_container,
+.tab__content_elements,
+.tab__content_template {
+    padding: 23px 16px 23px;
+}
+
+.tabs .content__code {
+    overflow-x: auto;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tabs__input_html:checked ~ .container .tabs__label_html, 
+.tabs__input_css:checked ~ .container .tabs__label_css,
+.tabs__input_js:checked ~ .container .tabs__label_js {
+    color: #212429;
+}
+
+.tabs__input_html:checked ~ .container .tabs__label_html::after, 
+.tabs__input_css:checked ~ .container .tabs__label_css::after,
+.tabs__input_js:checked ~ .container .tabs__label_js::after {
+    transform: scaleX(1);
+}
+
+.tabs__input_html:checked ~ .tab__content_css,
+.tabs__input_html:checked ~ .tab__content_js {
+    display: none;
+}
+
+.tabs__input_css:checked ~ .tab__content_html,
+.tabs__input_css:checked ~ .tab__content_js {
+    display: none;
+}
+
+.tabs__input_js:checked ~ .tab__content_html,
+.tabs__input_js:checked ~ .tab__content_css {
+    display: none;
+}

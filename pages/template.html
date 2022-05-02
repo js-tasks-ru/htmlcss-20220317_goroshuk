@@ -7,16 +7,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
 </head>
 <body>
     <page class="page page_inner">
         <header class="header header_theme-grey">
-            <div class="container">
-                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/images/sprite.svg#logo"></use>
-                </svg>                  
-            </div>
-        </header>
+            <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="/assets/images/sprite.svg#logo"></use>
+            </svg>       
+            <button class="header__menu-opener" id="burger-menu-open">
+                <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#menu-opener"></use>
+                </svg>
+            </button>           
+        </div>
+    </header>
+
+    <div class="burger-menu" id="burger-menu">
+        
+            <div class="burger-menu__header">
+
+            <button class="burger-menu__closer" id="burger-menu-close">
+                <svg class="burger-menu__icon-closer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" rx="12" xmlns="http://www.w3.org/2000/svg"></rect>
+                    <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                </svg>                                     
+            </button>
+        
+            <a href="/index.html"><svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="/assets/images/sprite.svg#logo">
+            </svg></a>
+
+            </div>                 
+            
+            <div class="burger-menu__divider"></div>
+            <div class="sidebar sidebar_mobile">
+                <ul class="sidebar__list"><h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__item"><a href="../pages/avatar-template.html" class="sidebar__link">Avatar</a></li>
+                    <li class="sidebar__item"><a href="../pages/custom-form-elements-template.html" class="sidebar__link">Custom form elements</a></li>
+                    <li class="sidebar__item"><a href="../pages/button-template.html" class="sidebar__link">Button</a></li>
+                    <li class="sidebar__item"><a href="../pages/histogram-template.html" class="sidebar__link">Histogram</a></li>
+                    <li class="sidebar__item"><a href="../pages/skeleton-template.html" class="sidebar__link">Skeleton</a></li>
+                    <li class="sidebar__item"><a href="../pages/accordion-template.html" class="sidebar__link">Accordion</a></li>
+                    <li class="sidebar__item"><a href="../pages/tooltip-template.html" class="sidebar__link">Tooltip</a></li>
+                    <li class="sidebar__item"><a href="../pages/modal-template.html" class="sidebar__link">Modal</a></li>
+                    <li class="sidebar__item"><a href="../pages/calendar-template.html" class="sidebar__link">Calendar</a></li>
+                </ul>
+           </div>
+        </div>
+
         <main class="content">
             <div class="container">
                 <div class="content__inner">
@@ -25,27 +64,19 @@
                         <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
                         <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
                         <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
                     </ul>
 
                     <ul class="sidebar__list"><h4 class="sidebar__title">Containers</h4>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Calendar</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Tooltip</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Skeleton</a></li>
                         <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
                     </ul>
 
                     <ul class="sidebar__list"><h4 class="sidebar__title">Templates</h4>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Avatar</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Custom form elements</a></li>
-                        <li class="sidebar__item"><a href="#" class="sidebar__link">Button</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Modal</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Histogram</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Accordion</a></li>
                     </ul>
                 </div>
                 <div class="content__component-preview">

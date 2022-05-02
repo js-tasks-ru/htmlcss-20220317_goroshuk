@@ -1,12 +1,13 @@
 .toggler {
     position: relative;
+    display: inline-block;
 }
 
 .toggler__state {
     display: flex;
     gap: 12px;
     align-items: center;
-    /* height: 30px; */
+    height: 30px;
 }
 
 .toggler__input {

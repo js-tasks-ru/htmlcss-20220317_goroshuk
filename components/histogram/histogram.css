@@ -1,0 +1,92 @@
+.histogram {
+    padding: 15px 24px 23px;
+    background: var(--white,#FFFFFF);
+    border: 1px solid var(--grey-3,#ACB5BD);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.histogram__information {
+    display: flex;
+    margin-bottom: 39px;
+    flex-wrap: wrap;
+}
+
+.histogram__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+    opacity: 0.8;
+    flex: 1 1 auto;
+    animation: column-start 200ms linear;
+   
+}
+
+.histogram__link {
+    text-decoration: none;
+    color: var(--histogram-blue, #4263EB);
+    padding-top: 3px;
+    display: inline-flex;
+    flex: 0 1 auto;
+    animation: column-start 200ms linear;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+}
+
+.histogram__amount {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black, #212429);
+    order: 1;
+    flex: 1 1 100%;
+    animation: column-start 200ms linear;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
+}
+
+
+.histogram__chart {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0 5px 0 2px;
+    margin: 0;
+    gap: 1px;
+    animation: column-start 200ms linear;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+    transform: scaleY(0)
+
+}
+
+.histogram__chart-column {
+    flex: 1 1 9px;
+    background: var(--histogram-blue, #4263EB);
+    list-style-type: none;
+}
+
+@keyframes column-start {
+
+    0% {transform-origin: bottom; transform: scaleY(0);}
+    25% {transform-origin: bottom; transform: scaleY(0.25);}
+    50% {transform-origin: bottom; transform: scaleY(0.5);}
+    75% {transform-origin: bottom; transform: scaleY(0.75);}
+    100% {transform-origin: bottom; transform: scaleY(1);}
+}
+
+

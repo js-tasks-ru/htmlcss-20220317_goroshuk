@@ -18,16 +18,29 @@
     top: 2em;
     right: 2em;
     transform: scaleY(-1);
+    display: none;
 }
 
 .accordion__closer {
     position: absolute;
     top: 2em;
     right: 2em;
- }
+}
 
 .accordion__item[open] {
     padding-bottom: 32px;
+}
+
+.accordion__item[open] .accordion__closer-open {
+    display: block;
+}
+
+.accordion__item[open] .accordion__closer {
+    display: none;
+}
+
+.accordion__item .accordion__closer {
+    display: block;
 }
 
 .accordion__item:last-child {
@@ -43,6 +56,10 @@
     margin-bottom: 0;
 }
 
-
+.accordion {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 
