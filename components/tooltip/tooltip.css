@@ -6,6 +6,7 @@
 .tooltip__icon {
     width: 24px;
     height: 24px;
+    fill: var(--selection-date-1, #4263EB);
 }
 
 .tooltip__helper {

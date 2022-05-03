@@ -42,6 +42,7 @@
     width: 100%;
     overflow-x: scroll;
     overflow-y: auto;
+    background: var(--white);
 }
 
 .tabs__label:hover {
@@ -78,7 +79,7 @@
 .tabs__input_elements:checked ~ .container .tabs__label_elements, 
 .tabs__input_container:checked ~ .container .tabs__label_container, 
 .tabs__input_template:checked ~ .container .tabs__label_template {
-    color: #212429;
+    color: var(--black);
 }
 
 .tabs__input_all-tab:checked ~ .container .tabs__label_all-tab::after, 
@@ -95,19 +96,14 @@
     text-decoration: underline;
 }
 
-.tab__content, 
-.tab__content_container,
-.tab__content_elements,
-.tab__content_template {
-    padding: 23px 16px 23px;
-}
-
 .tabs .content__code {
     overflow-x: auto;
 }
 
 .tabs {
     position: relative;
+    background: var(--white);
+
 }
 
 .tabs__input_html:checked ~ .container .tabs__label_html, 
@@ -135,4 +131,14 @@
 .tabs__input_js:checked ~ .tab__content_html,
 .tabs__input_js:checked ~ .tab__content_css {
     display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .tab__content, 
+.tab__content_container,
+.tab__content_elements,
+.tab__content_template {
+    padding: 23px 16px 23px;
+}
 }

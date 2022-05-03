@@ -69,11 +69,11 @@
 }
 
 .calendar__item_marked_start {
-    background: #4263EB;
-    color: var(--white, #fff);
+    background: var(--selection-date-1);
+    color: #fff;
 }
 
 .calendar__item_marked_end {
-    background: #4263EB;
-    color: var(--white, #fff);
+    background: var(--selection-date-1);
+    color: #fff;
 }

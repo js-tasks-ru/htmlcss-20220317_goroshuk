@@ -31,7 +31,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: var(--gray-4, #212429);
     margin: 6px 0 0 0;
 }
 
@@ -58,9 +57,9 @@
 }
 
 .card__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .card__content .modal__inner {

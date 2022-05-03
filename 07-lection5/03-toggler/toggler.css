@@ -52,7 +52,7 @@
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__icon {
-    fill: var(--white, #fff);
+    fill: #fff;
     transform: translateX(22px);
 }
 

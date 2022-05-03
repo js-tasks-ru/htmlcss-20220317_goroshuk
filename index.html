@@ -5,21 +5,42 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
+        <script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
     <body>
     <div class="page">
         
         <header class="header">
             <div class="container">
+                <div class="header__inner">
                 <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="/assets/images/sprite.svg#logo">
-                    </svg>                  
+                    </svg>          
+                    <label class="toggler">
+                        <input type="checkbox" class="toggler__input" id="theme-changer">
+                        
+                        <div class="toggler__state">
+                            <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <use href="/assets/images/sprite.svg#sun">
+                            </svg>
+                            <div class="toggler__control">
+                                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                </svg>                                   
+                            </div>
+                            <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <use href="/assets/images/sprite.svg#moon">
+                            </svg>
+                        </div>
+                    </label>
+                </div>      
             <h1 class="header__title">Reusable component library</h1>
             <button class="header__menu-opener" id="burger-menu-open">
                 <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="../../assets/images/sprite.svg#menu-opener"></use>
                 </svg>
             </button>
+            
         </div>
         </header>
 
@@ -83,10 +104,10 @@
                                    <div class="accordion">
                                         <details class="accordion__item"> <!--вернуть сюда open-->
                                             <summary class="accordion__title">
-                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                     </svg>
-                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                 </svg>
                                                 Accordion item 1
@@ -100,10 +121,10 @@
                                         </details>
                                         <details class="accordion__item">
                                             <summary class="accordion__title">
-                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                     </svg>
-                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                     </svg>
                                                 Accordion item 2
@@ -115,10 +136,10 @@
                                 
                                         <details class="accordion__item">
                                             <summary class="accordion__title">
-                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                     </svg>
-                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="/assets/images/sprite.svg#arrow"></use>
                                                     </svg>
                                                 Accordion item 3
@@ -266,7 +287,7 @@
                             <a href="#" class="card preview__card">
                                     <div class="card__content">
                                         <div class="tooltip">
-                                        <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#help"></use>
                                             </svg>
                                             </div>
@@ -360,7 +381,7 @@
                                 <a href="#" class="card preview__card">
                                     <div class="card__content">
                                         <div class="tooltip">
-                                        <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#help"></use>
                                             </svg>
                                             </div>
@@ -711,10 +732,10 @@
                             <div class="accordion">
                                 <details class="accordion__item"> <!--вернуть сюда open-->
                                     <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                         </svg>
                                         Accordion item 1
@@ -728,10 +749,10 @@
                                 </details>
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
                                         Accordion item 2
@@ -743,10 +764,10 @@
                         
                                 <details class="accordion__item">
                                     <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                                             <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
                                         Accordion item 3

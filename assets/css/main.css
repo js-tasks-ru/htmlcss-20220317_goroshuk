@@ -68,12 +68,39 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-    --check-box-shadow: rgba(189, 195, 199, 0);
+    --check-box-shadow: rgba(189, 195, 199, 0.5);
+
+    --dark-bg: var(--black);
+    --text-primary: var(--black);
+    --white-text: #ffffff;
 
 }
 
 html, body {
     height: 100%;
+}
+
+html[data-theme-dark] {
+
+    --white: #212429;
+    --black: #dedbd6;
+    --white-preview: #495057;
+    --dark-bg: var(--grey-1);
+    --month-year-color: var(--black);
+    --day-color: var(--black);
+    --date-color: var(--black);
+    --text-primary: var(--black);
+    --grey-4: var(--black);
+
+
+    /* --grey-4: #dedbd6; */
+    --black-2: #ffffff;
+    --modal-background: rgba(59, 59, 59, 0.5);
+    --shadow-color: rgba(222, 219, 214, 0.05);
+    --check-box-shadow: rgba(222, 219, 214, 0.5);
+
+    
+
 }
 
 /* * {

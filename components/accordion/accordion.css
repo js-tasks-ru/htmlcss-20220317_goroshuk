@@ -3,7 +3,7 @@
     border: 1px solid var(--grey-3, #ACB5BD);
     border-radius: 8px;
     background: var(--white, white);
-    color: var(--black, #212429);
+    color: var(--black);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -19,12 +19,14 @@
     right: 2em;
     transform: scaleY(-1);
     display: none;
+    fill: var(--black);
 }
 
 .accordion__closer {
     position: absolute;
     top: 2em;
     right: 2em;
+    fill: var(--black);
 }
 
 .accordion__item[open] {
