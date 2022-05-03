@@ -36,6 +36,7 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    fill: var(--black);
 }
 
 .modal__title {

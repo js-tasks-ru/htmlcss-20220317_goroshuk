@@ -73,6 +73,7 @@
     --dark-bg: var(--black);
     --text-primary: var(--black);
     --white-text: #ffffff;
+    --font-color: var(--black);
 
 }
 
@@ -91,13 +92,11 @@ html[data-theme-dark] {
     --date-color: var(--black);
     --text-primary: var(--black);
     --grey-4: var(--black);
-
-
-    /* --grey-4: #dedbd6; */
     --black-2: #ffffff;
     --modal-background: rgba(59, 59, 59, 0.5);
     --shadow-color: rgba(222, 219, 214, 0.05);
     --check-box-shadow: rgba(222, 219, 214, 0.5);
+    --font-color: #ffffff75;
 
     
 

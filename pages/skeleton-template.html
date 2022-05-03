@@ -8,18 +8,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="../components/burger-menu/burger-menu.js"></script>
+    <script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
+
 </head>
 <body>
     <page class="page page_inner">
         <header class="header header_theme-grey">
             <div class="container">
-                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/images/sprite.svg#logo"></use>
-                </svg>       
-                <button class="header__menu-opener" id="burger-menu-open">
-                    <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <use href="../../assets/images/sprite.svg#menu-opener"></use>
-                    </svg>
+                <div class="header__inner">
+                    <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="/assets/images/sprite.svg#logo">
+                        </svg>          
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" id="theme-changer">
+                            <div class="toggler__state">
+                                <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#sun">
+                                </svg>
+                                <div class="toggler__control">
+                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                    </svg>                                   
+                                </div>
+                                <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#moon">
+                                </svg>
+                            </div>
+                        </label>
+                </div>   
                 </button>           
             </div>
         </header>
