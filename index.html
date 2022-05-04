@@ -13,25 +13,25 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/images/sprite.svg#logo">
-                    </svg>          
-                    <label class="toggler">
-                        <input type="checkbox" class="toggler__input" id="theme-changer">
-                        
-                        <div class="toggler__state">
-                            <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use href="/assets/images/sprite.svg#sun">
-                            </svg>
-                            <div class="toggler__control">
-                                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="../../assets/images/sprite.svg#toggler-icon"></use>
-                                </svg>                                   
+                    <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="/assets/images/sprite.svg#logo">
+                        </svg>          
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" id="theme-changer">
+                            
+                            <div class="toggler__state">
+                                <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#sun">
+                                </svg>
+                                <div class="toggler__control">
+                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                    </svg>                                   
+                                </div>
+                                <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#moon">
+                                </svg>
                             </div>
-                            <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use href="/assets/images/sprite.svg#moon">
-                            </svg>
-                        </div>
                     </label>
                 </div>      
             <h1 class="header__title">Reusable component library</h1>
@@ -55,7 +55,7 @@
                     </svg>                                     
                 </button>
             
-                <a href="/index.html"><svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="/index.html"><svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
                     <use href="/assets/images/sprite.svg#logo">
                 </svg></a>
 
@@ -79,24 +79,24 @@
 
         <div class="tabs">
             
-            <input type="radio" class="tabs__input tabs__input_all-tab" name="component" id="#all-tab" checked>
-            <input type="radio" class="tabs__input tabs__input_elements" name="component" id="#elements-tab">
-            <input type="radio" class="tabs__input tabs__input_container" name="component" id="#container-tab">
-            <input type="radio" class="tabs__input tabs__input_template" name="component" id="#template-tab">
+            <input type="radio" class="tabs__input tabs__input_all-tab tabs__input_tab-1" name="component" id="tab-1" checked>
+            <input type="radio" class="tabs__input tabs__input_elements tabs__input_tab-2" name="component" id="tab-2">
+            <input type="radio" class="tabs__input tabs__input_container tabs__input_tab-3" name="component" id="tab-3">
+            <input type="radio" class="tabs__input tabs__input_template tabs__input_tab-4" name="component" id="tab-4">
             
             <div class="container">
                 <nav class="tabs__scroller">
-                    <label class="tabs__label tabs__label_all-tab" for="#all-tab">All components</label>
-                    <label class="tabs__label tabs__label_elements" for="#elements-tab">Elements</label>
-                    <label class="tabs__label tabs__label_container" for="#container-tab">Containers</label>
-                    <label class="tabs__label tabs__label_template" for="#template-tab">Templates</label>
+                    <label class="tabs__label tabs__label_tab-1" for="tab-1">All components</label>
+                    <label class="tabs__label tabs__label_tab-2" for="tab-2">Elements</label>
+                    <label class="tabs__label tabs__label_tab-3" for="tab-3">Containers</label>
+                    <label class="tabs__label tabs__label_tab-4" for="tab-4">Templates</label>
                 </nav>              
             </div>
         
 
             <main class="preview">
                 <div class="container">     
-                    <div class="tab__content">                            
+                    <div class="tabs__content tabs__content_tab-1">                            
                         <div class="preview__inner">
 
                             <a href="#" class="card preview__card">
@@ -216,50 +216,50 @@
                             <a href="#" class="card preview__card">
                                     <div class="card__content">
                                         <div class="calendar preview__calendar">
-                                        <div class="calendar__title">April 2022</div>
+                                        <div class="calendar__title preview__calendar-title">April 2022</div>
                                         <div class="calendar__wrapper">
                                             <div class="calendar__inner">
-                                                <span class="calendar__item calendar__item_day">Mon</span>
-                                                <span class="calendar__item calendar__item_day">Tue</span>
-                                                <span class="calendar__item calendar__item_day">Wed</span>
-                                                <span class="calendar__item calendar__item_day">Thu</span>
-                                                <span class="calendar__item calendar__item_day">Fri</span>
-                                                <span class="calendar__item calendar__item_day">Sut</span>
-                                                <span class="calendar__item calendar__item_day">Sun</span>
-                                                <span class="calendar__item"></span>
-                                                <span class="calendar__item"></span>
-                                                <span class="calendar__item"></span>
-                                                <span class="calendar__item"></span>
-                                                <span class="calendar__item">1</span>
-                                                <span class="calendar__item">2</span>
-                                                <span class="calendar__item">3</span>
-                                                <span class="calendar__item">4</span>
-                                                <span class="calendar__item">5</span>
-                                                <span class="calendar__item">6</span>
-                                                <span class="calendar__item">7</span>
-                                                <span class="calendar__item">8</span>
-                                                <span class="calendar__item">9</span>
-                                                <span class="calendar__item">10</span>
-                                                <span class="calendar__item">11</span>
-                                                <span class="calendar__item">12</span>
-                                                <span class="calendar__item">13</span>
-                                                <span class="calendar__item">14</span>
-                                                <span class="calendar__item">15</span>
-                                                <span class="calendar__item">16</span>
-                                                <span class="calendar__item">17</span>
-                                                <span class="calendar__item calendar__item_marked_start">18</span>
-                                                <span class="calendar__item calendar__item_marked">19</span>
-                                                <span class="calendar__item calendar__item_marked">20</span>
-                                                <span class="calendar__item calendar__item_marked">21</span>
-                                                <span class="calendar__item calendar__item_marked">22</span>
-                                                <span class="calendar__item calendar__item_marked_end">23</span>
-                                                <span class="calendar__item">24</span>
-                                                <span class="calendar__item">25</span>
-                                                <span class="calendar__item">26</span>
-                                                <span class="calendar__item">27</span>
-                                                <span class="calendar__item">28</span>
-                                                <span class="calendar__item">29</span>
-                                                <span class="calendar__item">30</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Mon</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Tue</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Wed</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Thu</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Fri</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Sut</span>
+                                                <span class="calendar__item calendar__item_day preview__calendar-item-day">Sun</span>
+                                                <span class="calendar__item preview__calendar-item"></span>
+                                                <span class="calendar__item preview__calendar-item"></span>
+                                                <span class="calendar__item preview__calendar-item"></span>
+                                                <span class="calendar__item preview__calendar-item"></span>
+                                                <span class="calendar__item preview__calendar-item">1</span>
+                                                <span class="calendar__item preview__calendar-item">2</span>
+                                                <span class="calendar__item preview__calendar-item">3</span>
+                                                <span class="calendar__item preview__calendar-item">4</span>
+                                                <span class="calendar__item preview__calendar-item">5</span>
+                                                <span class="calendar__item preview__calendar-item">6</span>
+                                                <span class="calendar__item preview__calendar-item">7</span>
+                                                <span class="calendar__item preview__calendar-item">8</span>
+                                                <span class="calendar__item preview__calendar-item">9</span>
+                                                <span class="calendar__item preview__calendar-item">10</span>
+                                                <span class="calendar__item preview__calendar-item">11</span>
+                                                <span class="calendar__item preview__calendar-item">12</span>
+                                                <span class="calendar__item preview__calendar-item">13</span>
+                                                <span class="calendar__item preview__calendar-item">14</span>
+                                                <span class="calendar__item preview__calendar-item">15</span>
+                                                <span class="calendar__item preview__calendar-item">16</span>
+                                                <span class="calendar__item preview__calendar-item">17</span>
+                                                <span class="calendar__item calendar__item_marked_start preview__calendar-item">18</span>
+                                                <span class="calendar__item calendar__item_marked preview__calendar-item">19</span>
+                                                <span class="calendar__item calendar__item_marked preview__calendar-item">20</span>
+                                                <span class="calendar__item calendar__item_marked preview__calendar-item">21</span>
+                                                <span class="calendar__item calendar__item_marked preview__calendar-item">22</span>
+                                                <span class="calendar__item calendar__item_marked_end preview__calendar-item">23</span>
+                                                <span class="calendar__item preview__calendar-item">24</span>
+                                                <span class="calendar__item preview__calendar-item">25</span>
+                                                <span class="calendar__item preview__calendar-item">26</span>
+                                                <span class="calendar__item preview__calendar-item">27</span>
+                                                <span class="calendar__item preview__calendar-item">28</span>
+                                                <span class="calendar__item preview__calendar-item">29</span>
+                                                <span class="calendar__item preview__calendar-item">30</span>
                             
                                             </div>
                                         </div>
@@ -363,167 +363,173 @@
                             </a>
                         </div>
                     </div> 
-                    <!-- разделитель tab__content  -->
-                        <div class="tab__content_elements">
-                            <div class="preview__inner">
-                                <a href="#" class="card preview__card">
-                                    <div class="card__content">
-                                        <div class="avatar">
-                                            <img class="avatar__image" src="/assets/images/avatar-200.jpg" alt="profile avatar">
-                                        </div>
-                                        </div>
-                                    <div class="card__divider"></div>
-                                        <div class="card__footer">
-                                            <h1 class="card__title">Avatar</h1>
-                                            <h2 class="card__subtitle">Element</h2>
-                                        </div>                              
-                                </a>
-                                <a href="#" class="card preview__card">
-                                    <div class="card__content">
-                                        <div class="tooltip">
-                                        <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#help"></use>
-                                            </svg>
+                    <!-- разделитель tabs__content_tab-1  -->
+                        <div class="tabs__content tabs__content_tab-2">
+                            <div class="container">
+                                <div class="preview__inner">
+                                    <a href="#" class="card preview__card">
+                                        <div class="card__content">
+                                            <div class="avatar">
+                                                <img class="avatar__image" src="/assets/images/avatar-200.jpg" alt="profile avatar">
                                             </div>
-                                            <div class="tooltip__helper"><p class="tooltip__text">Helper Text</p></div>
-                                    </div></div>
-                                    <div class="card__divider"></div>
-                                        <div class="card__footer">
-                                            <h1 class="card__title">Tooltip</h1>
-                                            <h2 class="card__subtitle">Element</h2>
-                                        </div>                              
-                                </a>
+                                            </div>
+                                        <div class="card__divider"></div>
+                                            <div class="card__footer">
+                                                <h1 class="card__title">Avatar</h1>
+                                                <h2 class="card__subtitle">Element</h2>
+                                            </div>                              
+                                    </a>
+                                    <a href="#" class="card preview__card">
+                                        <div class="card__content">
+                                            <div class="tooltip">
+                                            <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#help"></use>
+                                                </svg>
+                                                </div>
+                                                <div class="tooltip__helper"><p class="tooltip__text">Helper Text</p></div>
+                                        </div></div>
+                                        <div class="card__divider"></div>
+                                            <div class="card__footer">
+                                                <h1 class="card__title">Tooltip</h1>
+                                                <h2 class="card__subtitle">Element</h2>
+                                            </div>                              
+                                    </a>
+                                </div>
                             </div>
                         
-                            <h3 class="preview__title">Button</h3>
-                            <div class="preview__inner_button">
-                                <button class="button button_primary">
-                                    Primary
-                                </button>
-                        
-                                <button class="button button_primary" disabled>
-                                    Primary
-                                </button>
-                        
-                                <button class="button button_secondary">
-                                    Secondary
-                                </button>
-                        
-                                <button class="button button_secondary" disabled>
-                                    Secondary
-                                </button>
-                        
-                                <button class="button button_alternate">
-                                    Alternate
-                                </button>
-                        
-                                <button class="button button_alternate" disabled>
-                                    Alternate
-                                </button>
-                            </div>       
-                        
-                            <h3 class="preview__title">Custom form elements</h3>
-                            <div class="preview__inner_custom-form-elements">
-                                <div class="preview__inner_toggler" >
-                                    <label class="toggler">
-                                        <input type="checkbox" class="toggler__input">
-                                        <div class="toggler__state">
-                                            <div class="toggler__control">
-                                                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="../../assets/images/sprite.svg#toggler-icon"></use>
-                                                </svg>
-                                            </div>
-                                                    <div class="toggler__title">Off</div>
-                                                    <div class="toggler__title toggler__title-on">On</div>
+                            <div class="preview__button">
+                                <h3 class="preview__title">Button</h3>
+                                <div class="preview__inner preview__inner_button">
+                                    <button class="button button_primary">
+                                        Primary
+                                    </button>
                             
-                                            </div>
-                                    </label>
+                                    <button class="button button_primary" disabled>
+                                        Primary
+                                    </button>
                             
-                                    <label class="toggler">
-                                        <input type="checkbox" class="toggler__input" disabled>
-                                        <div class="toggler__state">
-                                            <div class="toggler__control">
-                                                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="../../assets/images/sprite.svg#toggler-icon"></use>
-                                                </svg>
-                                            </div>
-                                                    <div class="toggler__title">Disabled</div>
-                                                    <div class="toggler__title toggler__title-on">On</div>
-                                            </div>                   
-                                    </label>
-                                </div>
-                                
-                                <div class="preview__inner_checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox" class="checkbox__input">
-                                        <div class="checkbox__state">
-                                            <div class="checkbox__control">
-                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="../../assets/images/sprite.svg#checkbox-icon"></use>
-                                                </svg>
-                                            </div>
-                                                    <div class="checkbox__title checkbox__title-default">Default</div>
-                                                    <div class="checkbox__title checkbox__title-checked">Checked</div>
-                                            </div>
-                                    </label>
+                                    <button class="button button_secondary">
+                                        Secondary
+                                    </button>
                             
-                                    <label class="checkbox">
-                                        <input type="checkbox" class="checkbox__input" disabled>
-                                        <div class="checkbox__state">
-                                            <div class="checkbox__control">
-                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                            </div>
-                                                    <div class="checkbox__title">Disabled</div>
-                                            </div>
-                                    </label>
-                                </div>
+                                    <button class="button button_secondary" disabled>
+                                        Secondary
+                                    </button>
+                            
+                                    <button class="button button_alternate">
+                                        Alternate
+                                    </button>
+                            
+                                    <button class="button button_alternate" disabled>
+                                        Alternate
+                                    </button>
+                                </div>       
+                            </div>
 
-                                <div class="preview__inner_radio">
-                                    <label for="radio__choise-1" class="radio">
-                                        <input type="radio" value="1" name="choise" id="radio__choise-1" class="radio__input">
-                                        <div class="radio__state">
-                                            <div class="radio__control">
-                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <use href="../../assets/images/sprite.svg#radio-checked-inner">
-                                                </svg>
-                                            </div>
-                                            <div class="radio__title">Default</div>
-                                            <div class="radio__title radio__title_checked">Checked</div>
-                                        </div>
-                                    </label>
+                            <div class="preview__custom-form-elements">
+                                <h3 class="preview__title">Custom form elements</h3>
+                                <div class="preview__inner preview__inner_custom-form-elements">
+                                    <div class="preview__toggler" >
+                                        <label class="toggler">
+                                            <input type="checkbox" class="toggler__input">
+                                            <div class="toggler__state">
+                                                <div class="toggler__control">
+                                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                        <div class="toggler__title">Off</div>
+                                                        <div class="toggler__title toggler__title-on">On</div>
                                 
-                                    <label for="radio__choise-2" class="radio">
-                                        <input type="radio" value="2" name="choise" id="radio__choise-2" class="radio__input">
-                                        <div class="radio__state">
-                                            <div class="radio__control">
-                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <use href="../../assets/images/sprite.svg#radio-checked-inner">
-                                                </svg>
-                                            </div>
-                                            <div class="radio__title">Default</div>
-                                            <div class="radio__title radio__title_checked">Checked</div>
-                                        </div>
-                                    </label>
+                                                </div>
+                                        </label>
                                 
-                                    <label class="radio">
-                                            <input type="radio" value="3" name="choise" id="radio__choise-3" class="radio__input" disabled>
+                                        <label class="toggler">
+                                            <input type="checkbox" class="toggler__input" disabled>
+                                            <div class="toggler__state">
+                                                <div class="toggler__control">
+                                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                        <div class="toggler__title">Disabled</div>
+                                                        <div class="toggler__title toggler__title-on">On</div>
+                                                </div>                   
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="preview__checkbox">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/sprite.svg#checkbox-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                        <div class="checkbox__title checkbox__title-default">Default</div>
+                                                        <div class="checkbox__title checkbox__title-checked">Checked</div>
+                                                </div>
+                                        </label>
+                                
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                </div>
+                                                        <div class="checkbox__title">Disabled</div>
+                                                </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="preview__radio">
+                                        <label for="radio__choise-1" class="radio">
+                                            <input type="radio" value="1" name="choise" id="radio__choise-1" class="radio__input">
                                             <div class="radio__state">
                                                 <div class="radio__control">
                                                     <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <use href="../../assets/images/sprite.svg#radio-checked-inner">
                                                     </svg>
                                                 </div>
-                                                <div class="radio__title">Disabled</div>
+                                                <div class="radio__title">Default</div>
                                                 <div class="radio__title radio__title_checked">Checked</div>
                                             </div>
-                                    </label>
+                                        </label>
+                                    
+                                        <label for="radio__choise-2" class="radio">
+                                            <input type="radio" value="2" name="choise" id="radio__choise-2" class="radio__input">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use href="../../assets/images/sprite.svg#radio-checked-inner">
+                                                    </svg>
+                                                </div>
+                                                <div class="radio__title">Default</div>
+                                                <div class="radio__title radio__title_checked">Checked</div>
+                                            </div>
+                                        </label>
+                                    
+                                        <label class="radio">
+                                                <input type="radio" value="3" name="choise" id="radio__choise-3" class="radio__input" disabled>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="../../assets/images/sprite.svg#radio-checked-inner">
+                                                        </svg>
+                                                    </div>
+                                                    <div class="radio__title">Disabled</div>
+                                                    <div class="radio__title radio__title_checked">Checked</div>
+                                                </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>       
                         </div> 
-                        
-                        <div class="tab__content_container">
+                        <!-- разделитель tabs__content-2  -->
+                        <div class="tabs__content tabs__content_tab-3">
                             <div class="preview__inner">
                                 <a href="#" class="card preview__card">
                                     <div class="card__content">
@@ -585,60 +591,63 @@
 
                                 
                             </div>
-
-                            <h3 class="preview__title">Skeleton</h3>
-                            <div class="skeleton">
-                                <div class="skeleton__container">
-                                        <svg class="skeleton__avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="32" cy="32" r="32" fill="#DDE2E5"/>
-                                        </svg>
-                                    <div class="skeleton__body">
-                                        <div class="skeleton__box skeleton__box_short"></div>
-                                        <div class="skeleton__box skeleton__box_middle"></div>   
+                            <div class="preview__skeleton">
+                                <h3 class="preview__title">Skeleton</h3>
+                                <div class="skeleton">
+                                    <div class="skeleton__container">
+                                            <svg class="skeleton__avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="32" cy="32" r="32" fill="#DDE2E5"/>
+                                            </svg>
+                                        <div class="skeleton__body">
+                                            <div class="skeleton__box skeleton__box_short"></div>
+                                            <div class="skeleton__box skeleton__box_middle"></div>   
+                                        </div>
+                                    </div>   
+                                                    
+                                    <div class="skeleton__footer">
+                                            <div class="skeleton__box skeleton__box_normal"></div>
+                                            <div class="skeleton__box skeleton__box_normal"></div>
                                     </div>
-                                </div>   
-                                                   
-                                <div class="skeleton__footer">
-                                        <div class="skeleton__box skeleton__box_normal"></div>
-                                        <div class="skeleton__box skeleton__box_normal"></div>
                                 </div>
                             </div>
 
-                            <h3 class="preview__title">Custom form element</h3>
-                            <div class="preview__inner_custom-form-elements">
-                                <div class="input">
-                                    <label for="input-text" class="input__label">Put text here</label>
-                                    <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
-                                </div>
-                               
-                        
-                                <div class="input input_success">
-                                    <label for="input-text" class="input__label">Put text here</label>
-                                    <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
-                                    <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="../../assets/images/sprite.svg#check-circle"></use>
-                                    </svg>
-                                </div>
+                            <div class="preview__input">
+                                <h3 class="preview__title">Custom form elements</h3>
+                                <div class="preview__inner preview__inner_input">
+                                    <div class="input">
+                                        <label for="input-text" class="input__label">Put text here</label>
+                                        <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
+                                    </div>
                                 
-                        
-                                <div class="input input_error">
+                            
+                                    <div class="input input_success">
                                         <label for="input-text" class="input__label">Put text here</label>
                                         <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
                                         <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="../../assets/images/sprite.svg#alert-triangle"></use>
+                                            <use href="../../assets/images/sprite.svg#check-circle"></use>
                                         </svg>
                                     </div>
-                                
-                        
-                                <div class="input">
-                                        <label class="input__label">Not here</label>
-                                        <input type="text" disabled class="input__text-form" placeholder="Placeholder">
-                                </div>
+                                    
+                            
+                                    <div class="input input_error">
+                                            <label for="input-text" class="input__label">Put text here</label>
+                                            <input type="text" id="input-text" class="input__text-form" placeholder="Placeholder">
+                                            <svg class="input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="../../assets/images/sprite.svg#alert-triangle"></use>
+                                            </svg>
+                                        </div>
+                                    
+                            
+                                    <div class="input">
+                                            <label class="input__label">Not here</label>
+                                            <input type="text" disabled class="input__text-form" placeholder="Placeholder">
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
-                            <!-- разделитель  -->
-                        <div class="tab__content_template">
+                            <!-- разделитель tab__contents-3 -->
+                        <div class="tabs__content tabs__content_tab-4">
                             <div class="preview__inner">
                                 <a href="#" class="card preview__card">
                                     <div class="card__content">
@@ -711,72 +720,75 @@
                                     </div>
                                 </a>
                             </div>
-
-                            <h3 class="preview__title">Modal</h3>
-                            <button class="button button_primary" id="modal-open">
-                                Open modal
-                            </button>
-                            <div class="modal" id="modal">
-                                <div class="modal__inner">
-                                    <button class="modal__closer" id="modal-close">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="/assets/images/sprite.svg#closer"></use>
-                                    </svg>
-                                        </button>
-                                    <h3 class="modal__title">Modal title</h3>
-                                    <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="preview__modal">
+                                <h3 class="preview__title">Modal</h3>
+                                <button class="button button_primary" id="modal-open">
+                                    Open modal
+                                </button>
+                                <div class="modal" id="modal">
+                                    <div class="modal__inner">
+                                        <button class="modal__closer" id="modal-close">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <use href="/assets/images/sprite.svg#closer"></use>
+                                        </svg>
+                                            </button>
+                                        <h3 class="modal__title">Modal title</h3>
+                                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <h3 class="preview__title">Accordion</h3>
-                            <div class="accordion">
-                                <details class="accordion__item"> <!--вернуть сюда open-->
-                                    <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
+                            <div class="preview__accordion">
+                                <h3 class="preview__title">Accordion</h3>
+                                <div class="accordion">
+                                    <details class="accordion__item"> 
+                                        <summary class="accordion__title">
+                                            <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
                                             </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
-                                        </svg>
-                                        Accordion item 1
-                                    </summary>
-                                    <p class="accordion__text">
-                                        Wikipedia offers free copies of all available content to interested users. 
-                                        These databases can be used for mirroring, personal use, informal backups, offline use or database queries (such as for Wikipedia:Maintenance). 
-                                        All text content is multi-licensed under the Creative Commons Attribution-ShareAlike 3.0 License (CC-BY-SA) and the GNU Free Documentation License (GFDL). 
-                                        Images and other files are available under different terms, as detailed on their description pages. For our advice about complying with these licenses, see Wikipedia:Copyrights.
-                                    </p>
-                                </details>
-                                <details class="accordion__item">
-                                    <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
-                                            </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
-                                            </svg>
-                                        Accordion item 2
-                                    </summary>
-                                    <p class="accordion__text">
-                                        Text
-                                    </p>
-                                </details>
-                        
-                                <details class="accordion__item">
-                                    <summary class="accordion__title">
-                                        <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
-                                            </svg>
-                                        <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="/assets/images/sprite.svg#arrow"></use>
-                                            </svg>
-                                        Accordion item 3
-                                    </summary>
-                                    <p class="accordion__text">
-                                        Text1
-                                    </p>
-                                </details>
+                                            Accordion item 1
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Wikipedia offers free copies of all available content to interested users. 
+                                            These databases can be used for mirroring, personal use, informal backups, offline use or database queries (such as for Wikipedia:Maintenance). 
+                                            All text content is multi-licensed under the Creative Commons Attribution-ShareAlike 3.0 License (CC-BY-SA) and the GNU Free Documentation License (GFDL). 
+                                            Images and other files are available under different terms, as detailed on their description pages. For our advice about complying with these licenses, see Wikipedia:Copyrights.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__title">
+                                            <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            Accordion item 2
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Text
+                                        </p>
+                                    </details>
+                            
+                                    <details class="accordion__item">
+                                        <summary class="accordion__title">
+                                            <svg class="accordion__closer-open" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            <svg class="accordion__closer" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                                                <use href="/assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            Accordion item 3
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Text1
+                                        </p>
+                                    </details>
+                                </div>
                             </div>
                         </div>
                 </div>

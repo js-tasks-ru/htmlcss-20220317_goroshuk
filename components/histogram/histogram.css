@@ -31,7 +31,7 @@
     opacity: 0.8;
     flex: 1 1 auto;
     animation: column-start 200ms linear;
-   
+    color: var(--font-color);
 }
 
 .histogram__link {

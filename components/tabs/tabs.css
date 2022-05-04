@@ -1,24 +1,24 @@
-.tabs__input_elements:checked ~ .preview .tab__content_elements {
+.tabs__input_tab-2:checked ~ .preview .tabs__content_tab-2 {
     display: block;
 }
 
-.tabs__input_container:checked ~ .preview .tab__content_container {
+.tabs__input_tab-3:checked ~ .preview .tabs__content_tab-3 {
     display: block;
 }
 
-.tabs__input_template:checked ~ .preview .tab__content_template {
+.tabs__input_tab-4:checked ~ .preview .tabs__content_tab-4 {
     display: block;
 }
 
-.tabs__input_elements:checked ~ .preview .tab__content,
-.tabs__input_container:checked ~ .preview .tab__content,
-.tabs__input_template:checked ~ .preview .tab__content {
+.tabs__input_tab-2:checked ~ .preview .tabs__content_tab-1,
+.tabs__input_tab-3:checked ~ .preview .tabs__content_tab-1,
+.tabs__input_tab-4:checked ~ .preview .tabs__content_tab-1 {
     display: none;
 }
 
-.tab__content_elements,
-.tab__content_container,
-.tab__content_template {
+.tabs__content_tab-2,
+.tabs__content_tab-3,
+.tabs__content_tab-4 {
     display: none;
 }
 
@@ -76,24 +76,24 @@
     display: none;
 }
 
-.tabs__input_all-tab:checked ~ .container .tabs__label_all-tab, 
-.tabs__input_elements:checked ~ .container .tabs__label_elements, 
-.tabs__input_container:checked ~ .container .tabs__label_container, 
-.tabs__input_template:checked ~ .container .tabs__label_template {
-    color: var(--grey-3);
+.tabs__input_tab-1:checked ~ .container .tabs__label_tab-1, 
+.tabs__input_tab-2:checked ~ .container .tabs__label_tab-2, 
+.tabs__input_tab-3:checked ~ .container .tabs__label_tab-3, 
+.tabs__input_tab-4:checked ~ .container .tabs__label_tab-4 {
+    color: var(--black);
 }
 
-.tabs__input_all-tab:checked ~ .container .tabs__label_all-tab::after, 
-.tabs__input_elements:checked ~ .container .tabs__label_elements::after, 
-.tabs__input_container:checked ~ .container .tabs__label_container::after, 
-.tabs__input_template:checked ~ .container .tabs__label_template::after {
+.tabs__input_tab-1:checked ~ .container .tabs__label_tab-1::after, 
+.tabs__input_tab-2:checked ~ .container .tabs__label_tab-2::after, 
+.tabs__input_tab-3:checked ~ .container .tabs__label_tab-3::after, 
+.tabs__input_tab-4:checked ~ .container .tabs__label_tab-4::after {
     transform: scaleX(1);
 }
 
-.tabs__input_all-tab:focus ~ .container .tabs__label_all-tab, 
-.tabs__input_elements:focus ~ .container .tabs__label_elements, 
-.tabs__input_container:focus ~ .container .tabs__label_container, 
-.tabs__input_template:focus ~ .container .tabs__label_template {
+.tabs__input_tab-1:focus ~ .container .tabs__label_tab-1, 
+.tabs__input_tab-2:focus ~ .container .tabs__label_tab-2, 
+.tabs__input_tab-3:focus ~ .container .tabs__label_tab-3, 
+.tabs__input_tab-4:focus ~ .container .tabs__label_tab-4 {
     text-decoration: underline;
 }
 
@@ -104,42 +104,30 @@
 .tabs {
     position: relative;
     background: var(--white);
-
 }
 
-.tabs__input_html:checked ~ .container .tabs__label_html, 
-.tabs__input_css:checked ~ .container .tabs__label_css,
-.tabs__input_js:checked ~ .container .tabs__label_js {
-    color: var(--grey-2);
-}
-
-.tabs__input_html:checked ~ .container .tabs__label_html::after, 
-.tabs__input_css:checked ~ .container .tabs__label_css::after,
-.tabs__input_js:checked ~ .container .tabs__label_js::after {
-    transform: scaleX(1);
-}
-
-.tabs__input_html:checked ~ .tab__content_css,
-.tabs__input_html:checked ~ .tab__content_js {
+.tabs__input_tab-1:checked ~ .tabs__content_tab-2,
+.tabs__input_tab-1:checked ~ .tabs__content_tab-3 {
     display: none;
 }
 
-.tabs__input_css:checked ~ .tab__content_html,
-.tabs__input_css:checked ~ .tab__content_js {
+.tabs__input_tab-2:checked ~ .tabs__content_tab-1,
+.tabs__input_tab-2:checked ~ .tabs__content_tab-3 {
     display: none;
 }
 
-.tabs__input_js:checked ~ .tab__content_html,
-.tabs__input_js:checked ~ .tab__content_css {
-    display: none;
+.tabs__input_tab-2:checked ~ .tabs__content_tab-2,
+.tabs__input_tab-3:checked ~ .tabs__content_tab-3 {
+    display: block;
 }
 
+.tabs__input_tab-3:checked ~ .tabs__content_tab-1,
+.tabs__input_tab-3:checked ~ .tabs__content_tab-2 {
+    display: none;
+}
 
 @media screen and (max-width: 480px) {
-    .tab__content, 
-.tab__content_container,
-.tab__content_elements,
-.tab__content_template {
-    padding: 23px 16px 23px;
+    .tabs__content {
+    padding: 23px 16px;
 }
 }

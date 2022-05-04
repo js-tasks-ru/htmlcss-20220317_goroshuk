@@ -8,14 +8,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="../components/burger-menu/burger-menu.js"></script>
+    <script defer src="/components/dark-theme/dark-theme.js"></script>
 </head>
 <body>
     <page class="page page_inner">
         <header class="header header_theme-grey">
             <div class="container">
-                <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="/assets/images/sprite.svg#logo"></use>
-                </svg>       
+                <div class="header__inner">
+                    <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
+                        <use href="/assets/images/sprite.svg#logo">
+                        </svg>          
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" id="theme-changer">
+                            <div class="toggler__state">
+                                <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#sun">
+                                </svg>
+                                <div class="toggler__control">
+                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                    </svg>                                   
+                                </div>
+                                <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#moon">
+                                </svg>
+                            </div>
+                        </label>
+                </div>                
                 <button class="header__menu-opener" id="burger-menu-open">
                     <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use href="../../assets/images/sprite.svg#menu-opener"></use>
@@ -136,19 +155,19 @@
                         
                     </div>
                     <div class="tabs">
-                        <input type="radio" class="tabs__input tabs__input_html" name="code-view" id="#html-code" checked>
-                        <input type="radio" class="tabs__input tabs__input_css" name="code-view" id="#css-code">
+                        <input type="radio" class="tabs__input tabs__input_tab-1" name="code-view" id="tab-1" checked>
+                        <input type="radio" class="tabs__input tabs__input_tab-2" name="code-view" id="tab-2">
 
                     <div class="container">
                         <nav class="tabs__scroller">
-                            <label for="#html-code" class="tabs__label tabs__label_html">Html</label>
-                            <label for="#css-code" class="tabs__label tabs__label_css">Css</label>
+                            <label for="tab-1" class="tabs__label tabs__label_tab-1">Html</label>
+                            <label for="tab-2" class="tabs__label tabs__label_tab-2">Css</label>
                         </nav>
                     </div>
 
                         <div class="content__divider"></div>
                      
-                        <div class="tab__content_html">
+                        <div class="tabs__content_tab-1">
                             <pre class="content__code"><code>&lt;div class=&quot;calendar&quot;&gt;
 &lt;div class=&quot;calendar__title&quot;&gt;April 2022&lt;/div&gt;
     &lt;div class=&quot;calendar__wrapper&quot;&gt;
@@ -199,7 +218,7 @@
 &lt;/div&gt;</code></pre>
                         </div>
 
-                        <div class="tab__content_css">
+                        <div class="tabs__content_tab-2">
 <pre class="content__code"><code>.calendar {
     border: 1px solid #ACB5BD;
     border-radius: 8px;

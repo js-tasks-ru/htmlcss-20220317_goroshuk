@@ -5,6 +5,8 @@
 
 .header_theme-grey .header__logo {
     margin-bottom: 32px;
+    fill: #212429;
+    stroke: #212429;
 }
 
 @media screen and (max-width: 480px) {
