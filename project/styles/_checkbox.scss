@@ -1,0 +1,100 @@
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+
+  &__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__input:focus + &__state &__title {
+    text-decoration: underline;
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__control {
+    background: transparent;
+    border: 1px solid var(--grey-2, #dde2e5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__icon {
+    visibility: hidden;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary);
+  }
+
+  &__title-default {
+    margin-right: 12px;
+  }
+
+  &__title-checked {
+    display: none;
+  }
+
+  &__input:checked + &__state &__control {
+    background: var(--selection-date-1, #4263eb);
+    border-color: var(--selection-date-1, #4263eb);
+  }
+
+  &__input:checked + &__state &__icon {
+    visibility: visible;
+  }
+
+  &__input:checked + &__state &__title-default {
+    display: none;
+  }
+
+  &__input:checked + &__state &__title-checked {
+    display: block;
+  }
+
+  &__input:disabled + &__state &__title {
+    color: var(--grey-2, #dde2e5);
+  }
+
+  &__input:disabled + &__state &__control {
+    background: var(--grey-2, #dde2e5);
+    border-color: var(--grey-2, #dde2e5);
+  }
+
+  &__input:checked ~ &__state::before {
+    content: '';
+    position: absolute;
+    animation: check-shadow 500ms linear;
+    border-radius: 4px;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@keyframes check-shadow {
+  0% {
+    box-shadow: 0 0 0 0 #bdc3c7;
+  }
+  100% {
+    box-shadow: 0 0 0 1.5rem var(--checkbox-shadow, rgba(189, 195, 199, 0));
+  }
+}

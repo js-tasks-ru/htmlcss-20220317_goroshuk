@@ -1,0 +1,76 @@
+:root {
+  --white: #ffffff;
+  --black: #212429;
+  --pink: #f784ad;
+  --purple: #7048e8;
+  --blue: #374fc7;
+  --red: #f03d3e;
+  --grey-1: #f8f9fa;
+  --grey-2: #dde2e5;
+  --grey-3: #acb5bd;
+  --grey-4: #495057;
+
+  --notification: #d84910;
+
+  --black-2: #000000;
+
+  --modal-background: rgb(196, 196, 196, 0.5);
+
+  --day-color: #90a0b7;
+  --month-year-color: #334d6e;
+  --date-color: #334d6e;
+  --selection-date-1: #4263eb;
+  --selection-date-2: #a0b1f5;
+
+  --white-preview: #f9fafc;
+
+  --purple-hover: #5028c6;
+  --blue-hover: #2342c0;
+  --shadow-color: rgba(33, 36, 41, 0.05);
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --primary: var(--blue);
+  --secondary: var(--purple);
+
+  --check-box-shadow: rgba(189, 195, 199, 0.5);
+
+  --dark-bg: var(--black);
+  --text-primary: var(--black);
+  --white-text: #ffffff;
+  --font-color: var(--black);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html[data-theme-dark] {
+  --white: #212429;
+  --black: #dedbd6;
+  --white-preview: #495057;
+  --dark-bg: var(--grey-1);
+  --month-year-color: var(--black);
+  --day-color: var(--black);
+  --date-color: var(--black);
+  --text-primary: var(--black);
+  --grey-4: var(--black);
+  --black-2: #ffffff;
+  --modal-background: rgba(59, 59, 59, 0.5);
+  --shadow-color: rgba(222, 219, 214, 0.05);
+  --check-box-shadow: rgba(222, 219, 214, 0.5);
+  --font-color: #ffffff75;
+}
+
+@import '../../project/styles/_mixins';
+@import '../../project/styles/_button.scss';
+@import '../../project/styles/_accordion.scss';
+@import '../../project/styles/_avatar.scss';
+@import '../../project/styles/_burger-menu.scss';
+@import '../../project/styles/_calendar.scss';
+@import '../../project/styles/_card.scss';
+@import '../../project/styles/_checkbox.scss';
+@import '../../project/styles/_container.scss';
+@import '../../project/styles/_content.scss';

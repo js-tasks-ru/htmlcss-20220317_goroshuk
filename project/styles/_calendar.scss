@@ -1,0 +1,77 @@
+.calendar {
+  border: 1px solid var(--grey-3, #acb5bd);
+  border-radius: 8px;
+  background: var(--white, #ffffff);
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 30px 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  gap: 24px;
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    color: var(--month-year-color, #334d6e);
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  &__item {
+    color: var(--date-color, #334d6e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__item_day {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--day-color, #90a0b7);
+    align-items: center;
+  }
+
+  &__item_marked {
+    background: rgba(160, 177, 245, 0.2);
+  }
+
+  &__item_marked_start {
+    background: var(--selection-date-1);
+    color: #fff;
+  }
+
+  &__item_marked_end {
+    background: var(--selection-date-1);
+    color: #fff;
+  }
+}
