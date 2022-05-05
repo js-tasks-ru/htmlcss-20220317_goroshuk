@@ -14,7 +14,7 @@
     z-index: 99;
 }
 
-.burger-menu__opener, .burger-menu__closer, .burger-menu {
+.burger-menu__closer, .burger-menu {
     display: none;
 }
 
@@ -24,14 +24,14 @@
     display: block;
 }
 
-.burger-menu__opener, .burger-menu__closer {
+.burger-menu__closer {
     background: transparent;
     border: none;
     display: block;
     padding: 0;
 }
 
-.burger-menu__icon-opener, .burger-menu__icon-closer {
+.burger-menu__icon-closer {
     position: absolute;
     left: 19px;
     top: 22px;
