@@ -64,6 +64,7 @@ html[data-theme-dark] {
   --font-color: #ffffff75;
 }
 
+@import '../../project/styles/_vars.scss';
 @import '../../project/styles/_mixins';
 @import '../../project/styles/_button.scss';
 @import '../../project/styles/_accordion.scss';
@@ -74,3 +75,20 @@ html[data-theme-dark] {
 @import '../../project/styles/_checkbox.scss';
 @import '../../project/styles/_container.scss';
 @import '../../project/styles/_content.scss';
+@import '../../project/styles/footer/_footer.scss';
+@import '../../project/styles/footer/_theme_grey/_footer.scss';
+@import '../../project/styles/header/_header.scss';
+@import '../../project/styles/header/_theme_grey/_header.scss';
+@import '../../project/styles/_histogram.scss';
+@import '../../project/styles/_input.scss';
+@import '../../project/styles/_modal.scss';
+@import '../../project/styles/page/_page.scss';
+@import '../../project/styles/page/_inner/_page.scss';
+@import '../../project/styles/_preview.scss';
+@import '../../project/styles/_radio.scss';
+@import '../../project/styles/sidebar/sidebar.scss';
+@import '../../project/styles/sidebar/_mobile/sidebar_mobile.scss';
+@import '../../project/styles/_skeleton.scss';
+@import '../../project/styles/_tabs.scss';
+@import '../../project/styles/_toggler.scss';
+@import '../../project/styles/_tooltip.scss';

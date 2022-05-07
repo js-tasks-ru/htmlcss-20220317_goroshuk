@@ -4,9 +4,7 @@
   border-radius: 8px;
   background: var(--white, white);
   color: var(--black);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  @include text(16px, 400, 150%, false);
   margin-bottom: 8px;
   padding: 24px 32px;
   font-family: 'Inter', sans-serif;

@@ -39,10 +39,7 @@
 
   &__title {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    @include text(16px, 400, 24px, normal);
     color: var(--text-primary);
   }
 
@@ -55,8 +52,8 @@
   }
 
   &__input:checked + &__state &__control {
-    background: var(--selection-date-1, #4263eb);
-    border-color: var(--selection-date-1, #4263eb);
+    background: $selection-date-1;
+    border-color: $selection-date-1;
   }
 
   &__input:checked + &__state &__icon {

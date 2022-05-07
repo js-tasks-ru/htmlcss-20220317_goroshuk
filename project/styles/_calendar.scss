@@ -20,9 +20,7 @@
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    @include text(20px, 600, 24px, false);
     display: flex;
     justify-content: center;
     color: var(--month-year-color, #334d6e);
@@ -45,18 +43,12 @@
     justify-content: center;
     align-items: center;
     font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    @include text(16px, 400, 20px, normal);
   }
 
   &__item_day {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    @include text(14px, 400, 20px, normal);
     color: var(--day-color, #90a0b7);
     align-items: center;
   }
@@ -66,12 +58,12 @@
   }
 
   &__item_marked_start {
-    background: var(--selection-date-1);
+    background: $selection-date-1;
     color: #fff;
   }
 
   &__item_marked_end {
-    background: var(--selection-date-1);
+    background: $selection-date-1;
     color: #fff;
   }
 }

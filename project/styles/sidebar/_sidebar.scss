@@ -1,0 +1,43 @@
+.sidebar {
+  width: 229px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white-preview, #f9fafc);
+
+  @include media {
+    display: none;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    color: var(--black-2, #000000);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 22px;
+    @include text(14px, false, 22px, false);
+    color: var(--black, #212429);
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 16px 0;
+    font-weight: 400;
+  }
+
+  &__ul:first-child {
+    margin-top: 0;
+  }
+
+  &__title:first-child {
+    margin-top: 0;
+  }
+
+  &__link:focus {
+    color: $notification;
+  }
+}

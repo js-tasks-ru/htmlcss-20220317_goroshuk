@@ -1,0 +1,7 @@
+.page_inner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: 'Inter';
+  background: var(--white-preview, #f9fafc);
+  @include text(20px, 400, 26px, normal);
+}

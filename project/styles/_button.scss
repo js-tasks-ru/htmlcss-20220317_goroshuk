@@ -4,10 +4,8 @@
   padding: 15px;
   box-sizing: border-box;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--white-text);
+  @include text(16px, 500, 19px, false);
+  color: $white-text;
   transition: background 200ms ease-in-out, transform 200ms linear,
     border 200ms ease-in-out;
   border: none;
@@ -20,19 +18,19 @@
   }
 
   &_primary {
-    background: var(--blue, #4263eb);
+    background: $blue;
   }
 
   &_primary:hover {
-    background: var(--blue-hover, #2342c0);
+    background: $blue-hover;
   }
 
   &_secondary {
-    background: var(--purple, #7048e8);
+    background: $purple;
   }
 
   &_secondary:hover {
-    background: var(--purple-hover, #5028c6);
+    background: $purple-hover;
   }
 
   &_alternate {

@@ -1,0 +1,21 @@
+.header_theme-grey {
+  padding-bottom: 0;
+  background: var(--white-preview, #f9fafc);
+
+  @include media {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    line-height: 0;
+  }
+
+  & &__logo {
+    margin-bottom: 32px;
+    fill: #212429;
+    stroke: #212429;
+
+    @include media {
+      margin: 16px 0;
+    }
+  }
+}

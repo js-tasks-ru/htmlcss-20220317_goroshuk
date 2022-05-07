@@ -1,0 +1,131 @@
+.content {
+  background: var(--white-preview, #f9fafc);
+
+  @include media {
+    width: 100vw;
+    background: var(--white, #ffffff);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    height: 100%;
+    margin-top: 16px;
+    width: 100%;
+
+    @include media {
+      margin: 0;
+      width: 100vw;
+    }
+  }
+
+  &__component-preview {
+    background: var(--white, #ffffff);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 32px 48px;
+    overflow: hidden;
+
+    @include media {
+      width: 100vw;
+      box-shadow: none;
+      box-sizing: border-box;
+      padding: 16px 24px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: 'Inter';
+    @include text(28px, 400, 38px, normal);
+    color: var(--grey-4, #495057);
+  }
+
+  &__component-preview .tabs__label {
+    text-transform: uppercase;
+  }
+
+  &__divider {
+    height: 2px;
+    width: 100vw;
+    position: absolute;
+    left: -48px;
+    background: var(--white-preview, #f9fafc);
+
+    @include media {
+      left: -24px;
+    }
+  }
+
+  &__example {
+    margin-bottom: 2rem;
+  }
+
+  &__example_custom-form-elements &__inner_upper {
+    display: grid;
+    grid-template-areas:
+      'a1 b1 c1'
+      'a2 b2 c2'
+      'a3 b3 c3';
+    gap: 10px;
+    justify-content: space-between;
+
+    @include media {
+      grid-template-areas:
+        'a1'
+        'a2'
+        'a3'
+        'b1'
+        'b2'
+        'b3'
+        'c1'
+        'c2'
+        'c3';
+    }
+  }
+
+  &__example_custom-form-elements &__inner_upper .checkbox {
+    justify-content: flex-start;
+  }
+
+  &__example_custom-form-elements &__inner_upper .radio {
+    align-content: flex-start;
+  }
+
+  &__example_custom-form-elements &__inner_down {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media {
+      justify-content: center;
+    }
+  }
+
+  &__example_button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  &__example_calendar {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__example_tooltip {
+    padding: 50px;
+  }
+
+  &__example_modal .modal {
+    z-index: 1;
+  }
+}
+
+/* & {
+      background: var(--white-preview, #F9FAFC);
+  
+  } вставить в мастер-версию, чтобы убрать незакрашенные части div&, которые появляются из-за того, 
+  что содержимое div& выходит за пределы .page */
