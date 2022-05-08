@@ -17,8 +17,7 @@
 
 .header__logo {
   margin-left: 5px;
-  stroke: var(--grey-4);
-  fill: var(--dark-bg);
+  color: var(--dark-bg);
 }
 
 .header__menu-opener {
@@ -32,7 +31,7 @@
 
 .header .toggler__icon_sun,
 .header .toggler__icon_moon {
-  fill: var(--grey-3);
+  color: var(--grey-3);
 }
 
 .header__menu-opener {

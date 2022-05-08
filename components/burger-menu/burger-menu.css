@@ -52,5 +52,6 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--dark-bg);
   }
 }

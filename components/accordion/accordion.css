@@ -19,14 +19,14 @@
     right: 2em;
     transform: scaleY(-1);
     display: none;
-    fill: var(--black);
+    color: var(--black);
 }
 
 .accordion__closer {
     position: absolute;
     top: 2em;
     right: 2em;
-    fill: var(--black);
+    color: var(--black);
 }
 
 .accordion__item[open] {
