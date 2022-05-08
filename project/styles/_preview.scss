@@ -68,6 +68,7 @@
     width: 80%;
 
     @include media {
+      display: grid;
       grid-template-columns: auto;
       grid-auto-rows: auto;
       gap: 10px;

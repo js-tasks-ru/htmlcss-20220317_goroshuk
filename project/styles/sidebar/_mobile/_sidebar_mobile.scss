@@ -2,19 +2,19 @@
   display: block;
   padding-left: 16px;
 
-  &_mobile &__title {
+  & .sidebar__title {
     font-family: 'Inter';
     @include text(20px, 400, 26px, normal);
     color: var(--grey-3, #acb5bd);
     margin: 0;
   }
 
-  &_mobile &__item {
+  & .sidebar__item {
     font-family: 'Inter';
     @include text(16px, 400, 24px, normal);
   }
 
-  &_mobile &__list {
+  & .sidebar__list {
     display: flex;
     gap: 16px;
   }
