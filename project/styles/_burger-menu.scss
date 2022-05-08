@@ -13,6 +13,11 @@
     display: block;
   }
 
+  &__logo {
+    color: var(--black);
+  }
+  
+
   &[data-open] {
     transform: translateX(0);
     z-index: 99;

@@ -39,7 +39,12 @@
     position: absolute;
     top: 50%;
     right: 16px;
+    color: $blue;
   }
+
+  &_error &__icon {
+    color: $red;
+}
 
   &_success &__icon {
     display: block;

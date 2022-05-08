@@ -45,7 +45,13 @@
     position: absolute;
     top: 50%;
     right: 16px;
+    color: var(--blue);
 }
+
+.input_error .input__icon {
+    color: var(--red);
+}
+
 
 .input_success .input__icon {
     display: block;

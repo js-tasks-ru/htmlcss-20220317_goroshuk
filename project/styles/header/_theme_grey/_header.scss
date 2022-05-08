@@ -11,8 +11,7 @@
 
   & .header__logo {
     margin-bottom: 32px;
-    fill: #212429;
-    stroke: #212429;
+    color: var(--black);
 
     @include media {
       margin: 16px 0;
