@@ -80,6 +80,8 @@ html, body {
 }
 
 html[data-theme-dark] {
+    
+
 
     --white: #212429;
     --black: #dedbd6;
@@ -95,7 +97,6 @@ html[data-theme-dark] {
     --shadow-color: rgba(222, 219, 214, 0.05);
     --check-box-shadow: rgba(222, 219, 214, 0.5);
     --font-color: #ffffff75;
-
     
 
 }
