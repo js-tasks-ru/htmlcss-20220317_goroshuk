@@ -32,8 +32,7 @@
     padding-top: 3px;
     display: inline-flex;
     flex: 0 1 auto;
-    animation: column-start 200ms linear;
-    animation-fill-mode: forwards;
+    animation: column-start 200ms linear forwards;
     transform: scaleY(0);
   }
 
@@ -44,9 +43,8 @@
     color: var(--black, #212429);
     order: 1;
     flex: 1 1 100%;
-    animation: column-start 200ms linear;
+    animation: column-start 200ms linear forwards;
     animation-delay: 200ms;
-    animation-fill-mode: forwards;
     transform: scaleY(0);
   }
 
