@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
+    <script defer src="/components/dark-theme/dark-theme.js"></script>
+</head>
+<body>
+    <page class="page page_inner">
+        <header class="header header_theme-grey">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="../index.html"><svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <use href="/assets/images/sprite.svg#logo">
+                        </svg></a>          
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" id="theme-changer">
+                            <div class="toggler__state">
+                                <svg class="toggler__icon_sun" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#sun">
+                                </svg>
+                                <div class="toggler__control">
+                                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="../../assets/images/sprite.svg#toggler-icon"></use>
+                                    </svg>                                   
+                                </div>
+                                <svg class="toggler__icon_moon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="/assets/images/sprite.svg#moon">
+                                </svg>
+                            </div>
+                        </label>
+                </div>                   
+                <button class="header__menu-opener" id="burger-menu-open">
+                    <svg class="header__icon-opener" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#menu-opener"></use>
+                    </svg>
+                </button>           
+            </div>
+        </header>
+
+        <div class="burger-menu" id="burger-menu">
+            
+                <div class="burger-menu__header">
+
+                <button class="burger-menu__closer" id="burger-menu-close">
+                    <svg class="burger-menu__icon-closer" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" viewBox="0 0 24 24" fill="#DDE2E5" rx="12" xmlns="http://www.w3.org/2000/svg"></rect>
+                        <use href="../../assets/images/sprite.svg#menu-closer"></use>    
+                    </svg>                                     
+                </button>
+            
+                <a href="/index.html"><svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/images/sprite.svg#logo">
+                </svg></a>
+
+            </div>                 
+            
+            <div class="burger-menu__divider"></div> <!-- изменить -->
+            <div class="sidebar sidebar_mobile">
+                <ul class="sidebar__list"><h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__item"><a href="../pages/avatar-template.html" class="sidebar__link">Avatar</a></li>
+                    <li class="sidebar__item"><a href="../pages/custom-form-elements-template.html" class="sidebar__link">Custom form elements</a></li>
+                    <li class="sidebar__item"><a href="../pages/button-template.html" class="sidebar__link">Button</a></li>
+                    <li class="sidebar__item"><a href="../pages/histogram-template.html" class="sidebar__link">Histogram</a></li>
+                    <li class="sidebar__item"><a href="../pages/skeleton-template.html" class="sidebar__link">Skeleton</a></li>
+                    <li class="sidebar__item"><a href="../pages/accordion-template.html" class="sidebar__link">Accordion</a></li>
+                    <li class="sidebar__item"><a href="../pages/tooltip-template.html" class="sidebar__link">Tooltip</a></li>
+                    <li class="sidebar__item"><a href="../pages/modal-template.html" class="sidebar__link">Modal</a></li>
+                    <li class="sidebar__item"><a href="../pages/calendar-template.html" class="sidebar__link">Calendar</a></li>
+                </ul>
+           </div>
+        </div>
+
+        <main class="content">
+            <div class="container">
+                <div class="content__inner">
+                <div class="sidebar">
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Elements</h4>
+                        <li class="sidebar__item"><a href="avatar-template.html" class="sidebar__link">Avatar</a></li>
+                        <li class="sidebar__item"><a href="custom-form-elements-template.html" class="sidebar__link">Custom form elements</a></li>
+                        <li class="sidebar__item"><a href="button-template.html" class="sidebar__link">Button</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Containers</h4>
+                        <li class="sidebar__item"><a href="calendar-template.html" class="sidebar__link">Calendar</a></li>
+                        <li class="sidebar__item"><a href="tooltip-template.html" class="sidebar__link">Tooltip</a></li>
+                        <li class="sidebar__item"><a href="skeleton-template.html" class="sidebar__link">Skeleton</a></li>
+                    </ul>
+
+                    <ul class="sidebar__list"><h4 class="sidebar__title">Templates</h4>
+                        <li class="sidebar__item"><a href="modal-template.html" class="sidebar__link">Modal</a></li>
+                        <li class="sidebar__item"><a href="histogram-template.html" class="sidebar__link">Histogram</a></li>
+                        <li class="sidebar__item"><a href="accordion-template.html" class="sidebar__link">Accordion</a></li>
+                    </ul>
+                </div>
+                <div class="content__component-preview">
+                    <h3 class="content__title">Button</h3>
+                    <div class="content__example content__example_button">
+                        
+                        <button class="button button_primary">
+                            Primary
+                        </button>
+                
+                        <button class="button button_primary" disabled>
+                            Primary
+                        </button>
+                
+                        <button class="button button_secondary">
+                            Secondary
+                        </button>
+                
+                        <button class="button button_secondary" disabled>
+                            Secondary
+                        </button>
+                
+                        <button class="button button_alternate">
+                            Alternate
+                        </button>
+                
+                        <button class="button button_alternate" disabled>
+                            Alternate
+                        </button>
+                        
+                    </div>
+                    <div class="tabs">
+                        <input type="radio" class="tabs__input tabs__input_tab-1" name="code-view" id="tab-1" checked>
+                        <input type="radio" class="tabs__input tabs__input_tab-2" name="code-view" id="tab-2">
+
+                    <div class="container">
+                        <nav class="tabs__scroller">
+                            <label for="tab-1" class="tabs__label tabs__label_tab-1">Html</label>
+                            <label for="tab-2" class="tabs__label tabs__label_tab-2">Css</label>
+                        </nav>
+                    </div>
+
+                        <div class="content__divider"></div>
+                     
+                        <div class="tabs__content_tab-1">
+                            <pre class="content__code"><code>&lt;button class=&quot;button button_primary&quot;&gt;
+    Primary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_primary&quot; disabled&gt;
+    Primary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_secondary&quot;&gt;
+    Secondary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_secondary&quot; disabled&gt;
+    Secondary
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_alternate&quot;&gt;
+    Alternate
+&lt;/button&gt;
+                    
+&lt;button class=&quot;button button_alternate&quot; disabled&gt;
+    Alternate
+&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <div class="tabs__content_tab-2">
+<pre class="content__code"><code>.button {
+    border-radius: 8px;
+    height: 48px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white, white);
+    transition: background 200ms ease-in-out, transform 200ms linear, border 200ms ease-in-out;
+    border: none;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button_primary {
+     background: var(--blue, #4263EB);   
+}
+
+.button_primary:hover {
+    background: var(--blue-hover, #2342C0);
+}
+
+.button_secondary {
+    background: var(--purple, #7048E8);
+}
+
+.button_secondary:hover {
+    background: var(--purple-hover, #5028C6);
+}
+
+.button_alternate {
+    border: 1px solid var(--grey-3,#ACB5BD);  
+    background: var(--white);
+    color: var(--grey-4, #495057);
+}
+
+.button_alternate:hover {
+    border: 1px solid var(--black,#212429);
+}
+
+.button:active {
+    transform: translateY(3%);
+}</code></pre>
+                        </div>
+                    </div>                                     
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer class="footer footer_theme_grey">
+            <div class="container">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__subtitle">This project is a collection of professionally designed, pre-built, 
+                    fully responsive HTML snippets you can drop into your projects. 
+                    Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </div>
+
+        </footer>
+
+    </page>
+    
+</body>
+</html>

@@ -1,4 +1,16 @@
 @import '../fonts/fonts.css';
+@import '../../components/accordion/accordion.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/modal/modal.css';
+@import '../../components/button/button.css';
+@import '../../components/toggler/toggler.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
+@import '../../components/skeleton/skeleton.css';
+@import '../../components/input/input.css';
 @import '../../components/page/page.css';
 @import '../../components/footer/footer.css';
 @import '../../components/header/header.css';
@@ -13,7 +25,8 @@
 @import '../../components/content/content.css';
 @import '../../components/burger-menu/burger-menu.css';
 @import '../../components/sidebar/sidebar_mobile/sidebar_mobile.css';
-@import '../../components/divider/divider.css';
+
+
 
 
 
@@ -53,10 +66,38 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
+    --check-box-shadow: rgba(189, 195, 199, 0.5);
+
+    --dark-bg: var(--black);
+    --text-primary: var(--black);
+    --white-text: #ffffff;
+    --font-color: var(--black);
+
 }
 
 html, body {
     height: 100%;
+}
+
+html[data-theme-dark] {
+
+    --white: #212429;
+    --black: #dedbd6;
+    --white-preview: #495057;
+    --dark-bg: var(--grey-1);
+    --month-year-color: var(--black);
+    --day-color: var(--black);
+    --date-color: var(--black);
+    --text-primary: var(--black);
+    --grey-4: var(--black);
+    --black-2: #ffffff;
+    --modal-background: rgba(59, 59, 59, 0.5);
+    --shadow-color: rgba(222, 219, 214, 0.05);
+    --check-box-shadow: rgba(222, 219, 214, 0.5);
+    --font-color: #ffffff75;
+
+    
+
 }
 
 /* * {
