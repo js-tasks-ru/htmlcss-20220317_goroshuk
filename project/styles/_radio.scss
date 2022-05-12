@@ -1,0 +1,73 @@
+.radio {
+  display: inline-flex;
+  position: relative;
+  gap: 12px;
+
+  &__state {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid var(--grey-2, #dde2e5);
+    box-sizing: border-box;
+    border-radius: 14px;
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__title {
+    font-family: 'Inter';
+    @include text(16px, 400, 24px, normal);
+    color: var(--text-primary);
+  }
+
+  &__title_checked {
+    display: none;
+  }
+
+  &__input:checked ~ &__state &__icon {
+    display: block;
+  }
+
+  &__input:checked ~ &__state &__control {
+    border: 2px solid $selection-date-1;
+  }
+
+  &__input:checked ~ &__state &__title {
+    display: none;
+  }
+
+  &__input:checked ~ &__state &__title_checked {
+    display: block;
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
+
+  & &__input:disabled ~ &__state &__control {
+    background: var(--grey-2);
+  }
+
+  &__input:disabled ~ &__state &__title {
+    color: var(--grey-2);
+  }
+}

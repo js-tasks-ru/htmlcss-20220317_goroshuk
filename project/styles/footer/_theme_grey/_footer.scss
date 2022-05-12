@@ -1,0 +1,8 @@
+.footer_theme_grey {
+  height: auto;
+  background: var(--white-preview, #f9fafc);
+
+  @include media {
+    display: none;
+  }
+}

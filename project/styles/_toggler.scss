@@ -1,0 +1,75 @@
+.toggler {
+  position: relative;
+  display: inline-block;
+
+  &__state {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 30px;
+  }
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__control {
+    background: transparent;
+    border: 1px solid #dde2e5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 52px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    transition: background 500ms linear;
+  }
+
+  &__icon {
+    margin: 2px;
+    fill: var(--grey-2, #dde2e5);
+    position: relative;
+    transition: transform 500ms linear, fill 500ms linear;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    @include text(16px, 400, 20px, normal);
+    color: var(--text-primary);
+  }
+
+  &__title-on {
+    display: none;
+  }
+
+  &__input:checked ~ &__state &__control {
+    background: $selection-date-1;
+    border-color: $selection-date-1;
+  }
+
+  &__input:checked ~ &__state &__icon {
+    fill: #fff;
+    transform: translateX(22px);
+  }
+
+  &__input:checked ~ &__state &__title {
+    display: none;
+  }
+
+  &__input:checked ~ &__state &__title-on {
+    display: block;
+  }
+
+  &__input:disabled ~ &__state &__control {
+    background: var(--grey-2, #dde2e5);
+  }
+
+  &__input:disabled ~ &__state &__icon {
+    fill: var(--grey-3, #acb5bd);
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
+}

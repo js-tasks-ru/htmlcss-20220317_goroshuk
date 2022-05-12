@@ -1,0 +1,49 @@
+.button {
+  border-radius: 8px;
+  height: 48px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  @include text(16px, 500, 19px, false);
+  color: $white-text;
+  transition: background 200ms ease-in-out, transform 200ms linear,
+    border 200ms ease-in-out;
+  border: none;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &_primary {
+    background: $blue;
+  }
+
+  &_primary:hover {
+    background: $blue-hover;
+  }
+
+  &_secondary {
+    background: $purple;
+  }
+
+  &_secondary:hover {
+    background: $purple-hover;
+  }
+
+  &_alternate {
+    border: 1px solid var(--grey-3, #acb5bd);
+    background: none;
+    color: var(--grey-3);
+  }
+
+  &_alternate:hover {
+    border: 1px solid var(--black, #212429);
+  }
+
+  &:active {
+    transform: translateY(3%);
+  }
+}

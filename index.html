@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="./assets/css/normalize.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script defer src="/components/burger-menu/burger-menu.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/components/tokyo-night-dark.min.css">
+        <link rel="stylesheet" href="/build/index.css">
+        <script defer src="../components/burger-menu/burger-menu.js"></script>
         <script defer src="/components/dark-theme/dark-theme.js"></script>
+        <script src="/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
     </head>
     <body>
     <div class="page">
@@ -99,7 +103,7 @@
                     <div class="tabs__content tabs__content_tab-1">                            
                         <div class="preview__inner">
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/accordion-template.html" class="card preview__card">
                                 <div class="card__content">
                                    <div class="accordion">
                                         <details class="accordion__item"> <!--вернуть сюда open-->
@@ -157,7 +161,7 @@
                                     </div>
                             </a>
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/histogram-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="histogram">
                                             <div class="histogram__information">
@@ -213,7 +217,7 @@
                                     </div>
                                 </a>
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/calendar-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="calendar preview__calendar">
                                         <div class="calendar__title preview__calendar-title">April 2022</div>
@@ -271,7 +275,7 @@
                                     </div>
                                 </a>
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/avatar-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="avatar">
                                             <img class="avatar__image" src="./assets/images/avatar-200.jpg" alt="profile avatar">
@@ -284,7 +288,7 @@
                                     </div>
                             </a>
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/tooltip-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="tooltip">
                                         <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
@@ -300,7 +304,7 @@
                                         </div>                              
                             </a>
 
-                            <a href="#" class="card preview__card">
+                            <a href="/pages/custom-form-elements-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="card__container">
                                         <label class="toggler">
@@ -367,7 +371,7 @@
                         <div class="tabs__content tabs__content_tab-2">
                             <div class="container">
                                 <div class="preview__inner">
-                                    <a href="#" class="card preview__card">
+                                    <a href="/pages/avatar-template.html" class="card preview__card">
                                         <div class="card__content">
                                             <div class="avatar">
                                                 <img class="avatar__image" src="/assets/images/avatar-200.jpg" alt="profile avatar">
@@ -379,7 +383,7 @@
                                                 <h2 class="card__subtitle">Element</h2>
                                             </div>                              
                                     </a>
-                                    <a href="#" class="card preview__card">
+                                    <a href="/pages/tooltip-template.html" class="card preview__card">
                                         <div class="card__content">
                                             <div class="tooltip">
                                             <div class="tooltip__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
@@ -398,7 +402,7 @@
                             </div>
                         
                             <div class="preview__button">
-                                <h3 class="preview__title">Button</h3>
+                                <h3><a class="preview__title link" href="pages/button-template.html">Button</a></h3>
                                 <div class="preview__inner preview__inner_button">
                                     <button class="button button_primary">
                                         Primary
@@ -427,7 +431,7 @@
                             </div>
 
                             <div class="preview__custom-form-elements">
-                                <h3 class="preview__title">Custom form elements</h3>
+                                <h3><a href="/pages/custom-form-elements-template.html" class="preview__title">Custom form elements</a></h3>
                                 <div class="preview__inner preview__inner_custom-form-elements">
                                     <div class="preview__toggler" >
                                         <label class="toggler">
@@ -531,7 +535,7 @@
                         <!-- разделитель tabs__content-2  -->
                         <div class="tabs__content tabs__content_tab-3">
                             <div class="preview__inner">
-                                <a href="#" class="card preview__card">
+                                <a href="/pages/calendar-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="calendar preview__calendar">
                                         <div class="calendar__title">April 2022</div>
@@ -592,7 +596,7 @@
                                 
                             </div>
                             <div class="preview__skeleton">
-                                <h3 class="preview__title">Skeleton</h3>
+                                <h3><a href="/pages/skeleton-template.html" class="preview__title">Skeleton</a></h3>
                                 <div class="skeleton">
                                     <div class="skeleton__container">
                                             <svg class="skeleton__avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -612,7 +616,7 @@
                             </div>
 
                             <div class="preview__input">
-                                <h3 class="preview__title">Custom form elements</h3>
+                                <h3><a href="/pages/custom-form-elements-template.html" class="preview__title">Custom form elements</a></h3>
                                 <div class="preview__inner preview__inner_input">
                                     <div class="input">
                                         <label for="input-text" class="input__label">Put text here</label>
@@ -649,7 +653,7 @@
                             <!-- разделитель tab__contents-3 -->
                         <div class="tabs__content tabs__content_tab-4">
                             <div class="preview__inner">
-                                <a href="#" class="card preview__card">
+                                <a href="/pages/histogram-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="histogram">
                                             <div class="histogram__information">
@@ -705,7 +709,7 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="card preview__card">
+                                <a href="/pages/modal-template.html" class="card preview__card">
                                     <div class="card__content">
                                         <div class="modal__inner">
                                             <h3 class="modal__title">Modal title</h3>
@@ -721,7 +725,7 @@
                                 </a>
                             </div>
                             <div class="preview__modal">
-                                <h3 class="preview__title">Modal</h3>
+                                <h3><a href="/pages/modal-template.html" class="preview__title">Modal</a></h3>
                                 <button class="button button_primary" id="modal-open">
                                     Open modal
                                 </button>
@@ -740,7 +744,7 @@
                             </div>
 
                             <div class="preview__accordion">
-                                <h3 class="preview__title">Accordion</h3>
+                                <h3><a href="/pages/accordion-template.html" class="preview__title">Accordion</a></h3>
                                 <div class="accordion">
                                     <details class="accordion__item"> 
                                         <summary class="accordion__title">

@@ -1,0 +1,129 @@
+.preview {
+  background: var(--white-preview, #f9fafc);
+  flex-grow: 1;
+  padding: 68px 0;
+  position: relative;
+
+  @include media {
+    padding: 0;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3 - 20px));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 30px;
+
+    @include media {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 23px 16px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__calendar {
+    padding: 14px 15px 20px;
+    max-width: 180px;
+    gap: 16px;
+  }
+
+  &__calendar-title {
+    @include text(16px, false, 20px, false);
+  }
+
+  &__calendar-item {
+    @include text(14px, false, 16px, false);
+  }
+
+  &__calendar-item-day {
+    font-size: 12px;
+  }
+
+  &__card {
+    padding: 32px 25px;
+    flex-basis: calc((100 / 3) * 1% - 2 * 30px);
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    @include media {
+      padding: 16px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    color: var(--grey-3, #acb5bd);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  &__inner_custom-form-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 80%;
+
+    @include media {
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      gap: 10px;
+    }
+  }
+
+  &__toggler {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include media {
+      display: grid;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include media {
+      display: grid;
+      gap: 5px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include media {
+      display: grid;
+      gap: 5px;
+    }
+  }
+
+  &__inner_button {
+    grid-template-columns: 20vw 20vw;
+    grid-auto-rows: auto;
+    gap: 10px;
+
+    @include media {
+      grid-template-columns: repeat(2, calc(50% - 10px));
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+
+  &__inner_input {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    @include media {
+      grid-template-columns: 1fr;
+    }
+  }
+}

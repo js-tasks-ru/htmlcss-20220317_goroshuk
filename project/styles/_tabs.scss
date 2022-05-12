@@ -1,0 +1,129 @@
+.tabs {
+  position: relative;
+  background: var(--white);
+
+  &__input_tab-2:checked ~ .preview &__content_tab-2 {
+    display: block;
+  }
+
+  &__input_tab-3:checked ~ .preview &__content_tab-3 {
+    display: block;
+  }
+
+  &__input_tab-4:checked ~ .preview &__content_tab-4 {
+    display: block;
+  }
+
+  &__input_tab-2:checked ~ .preview &__content_tab-1,
+  &__input_tab-3:checked ~ .preview &__content_tab-1,
+  &__input_tab-4:checked ~ .preview &__content_tab-1 {
+    display: none;
+  }
+
+  &__content_tab-2,
+  &__content_tab-3,
+  &__content_tab-4 {
+    display: none;
+  }
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    outline: transparent;
+  }
+
+  &__scroller {
+    font-family: 'Inter';
+    @include text(16px, 400, 24px, normal);
+    display: flex;
+    gap: 40px;
+    color: var(--grey-3);
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+    background: var(--white);
+  }
+
+  &__label:hover {
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  &__label {
+    white-space: nowrap;
+    position: relative;
+    color: var(--grey-3);
+  }
+
+  &__label::after {
+    transform: scaleX(0);
+    transition: transform 250ms linear;
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: var(--black, #212429);
+    height: 5px;
+    position: relative;
+    margin-top: 8px;
+  }
+
+  &__label:hover::after {
+    transform: scaleX(1);
+  }
+
+  &__scroller::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__input_tab-1:checked ~ .container &__label_tab-1,
+  &__input_tab-2:checked ~ .container &__label_tab-2,
+  &__input_tab-3:checked ~ .container &__label_tab-3,
+  &__input_tab-4:checked ~ .container &__label_tab-4 {
+    color: var(--black);
+  }
+
+  &__input_tab-1:checked ~ .container &__label_tab-1::after,
+  &__input_tab-2:checked ~ .container &__label_tab-2::after,
+  &__input_tab-3:checked ~ .container &__label_tab-3::after,
+  &__input_tab-4:checked ~ .container &__label_tab-4::after {
+    transform: scaleX(1);
+  }
+
+  &__input_tab-1:focus ~ .container &__label_tab-1,
+  &__input_tab-2:focus ~ .container &__label_tab-2,
+  &__input_tab-3:focus ~ .container &__label_tab-3,
+  &__input_tab-4:focus ~ .container &__label_tab-4 {
+    text-decoration: underline;
+  }
+
+  & .content__code {
+    overflow-x: auto;
+  }
+
+  &__input_tab-1:checked ~ &__content_tab-2,
+  &__input_tab-1:checked ~ &__content_tab-3 {
+    display: none;
+  }
+
+  &__input_tab-2:checked ~ &__content_tab-1,
+  &__input_tab-2:checked ~ &__content_tab-3 {
+    display: none;
+  }
+
+  &__input_tab-2:checked ~ &__content_tab-2,
+  &__input_tab-3:checked ~ &__content_tab-3 {
+    display: block;
+  }
+
+  &__input_tab-3:checked ~ &__content_tab-1,
+  &__input_tab-3:checked ~ &__content_tab-2 {
+    display: none;
+  }
+
+  &__content {
+    @include media {
+      padding: 23px 16px;
+    }
+  }
+}

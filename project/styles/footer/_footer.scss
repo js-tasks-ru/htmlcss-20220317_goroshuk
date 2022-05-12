@@ -1,0 +1,23 @@
+.footer {
+  background: var(--white, #ffffff);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  @include text(38px, 500, 48px, normal);
+  color: var(--font-color);
+
+  @include media {
+    display: none;
+  }
+
+  &__title {
+    margin: 71px 0 32px 0;
+    @include text(inherit, 500, false, false);
+  }
+
+  &__subtitle {
+    @include text(16px, 400, 24px, false);
+    padding-bottom: 136px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}

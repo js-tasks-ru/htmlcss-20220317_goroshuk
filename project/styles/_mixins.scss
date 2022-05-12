@@ -1,0 +1,23 @@
+@mixin media {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin text($F-size: false, $F-weight: false, $L-h: false, $F-style: false) {
+  @if $F-size {
+    font-size: $F-size;
+  }
+
+  @if $F-weight {
+    font-weight: $F-weight;
+  }
+
+  @if $L-h {
+    line-height: $L-h;
+  }
+
+  @if $F-style {
+    font-style: $F-style;
+  }
+}

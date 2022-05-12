@@ -1,0 +1,108 @@
+.card {
+  background: var(--white, #ffffff);
+  box-shadow: 0px 2px 4px var(--shadow-color, rgba(33, 36, 41, 0.05));
+  border-radius: 12px;
+  font-size: 16px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+  @include text(21px, 500, 25px, normal);
+  color: var(--font-color);
+  text-decoration: none;
+
+  &__footer {
+    margin-top: 25px;
+    text-align: center;
+
+    @include media {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    font-size: 21px;
+
+    @include media {
+      font-family: 'Inter';
+      @include text(20px, 500, 24px, normal);
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    @include text(16px, 400, 19px, false);
+    margin: 6px 0 0 0;
+
+    @include media {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .tooltip__helper {
+    display: block;
+  }
+
+  & .tooltip {
+    position: relative;
+    transform: translateY(100%);
+  }
+
+  & .avatar {
+    width: 204px;
+    height: 204px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @include media {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+    }
+  }
+
+  &__content .modal__inner {
+    position: static;
+    transform: translate(0, 0);
+    padding: 15px 20px 16px;
+    border: 1px solid var(--grey-3, #acb5bd);
+  }
+
+  &__content .modal__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__content .modal__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__divider {
+    display: none;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white-preview, #f9fafc);
+
+    @include media {
+      display: block;
+      width: calc(100vw - 32px);
+    }
+  }
+}
